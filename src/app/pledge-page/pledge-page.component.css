@@ -1,0 +1,386 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.body {
+	width: 100%;
+	height:100%;
+}
+
+.bodygrid {
+	display : grid;
+	grid-template-rows:minmax(1fr,260px) minmax(2fr,520px) 400px;
+	grid-template-columns: 1fr;
+	grid-template-areas: "header"
+						 "input"
+						 "styling";
+	grid-row-gap: 1px;
+	grid-column-gap: 1px;
+	margin:5px auto;
+}
+
+.topMenu {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: minmax(auto,20%) 60% 20%;
+}
+
+
+/*.backElement {
+	display: flex;
+	flex-flow:row wrap;
+	align-items: flex-start;
+	flex:1 1 auto;
+	justify-content: flex-start;
+	align-items: flex-start;
+	justify-content: flex-start;
+}*/
+
+.loginBttn {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	flex: 1 1 auto;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+/*Style pledge buttons*/
+.searchbutton {
+	font-weight: bold;
+	font-size: larger;
+}
+
+.previewButton {
+	font-weight: normal;
+	font-size: large;
+	display: flex;
+	margin: auto;
+}
+
+.previewStyle {
+	background: repeating-linear-gradient(60deg,#511C26 2.5%, #228B22 2.5% 5%, #F00 5% 7.5%,#000 7.5% 10%,#38299D 10% 12.5%);
+	align-items: center;
+	justify-content: center;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.flexContainer {
+	display: flex;
+}
+
+.pledgeMenu {
+	display: inline-flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: flex-start;
+}
+
+
+.titleSection {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	grid-area:header;
+	align-self: center;
+}
+
+.titleHeader {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	flex: 1 1 auto;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.centreContent {
+	display:flex;
+	flex-flow: row wrap;
+	align-items: center;
+	flex: 1 1 auto;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.formClass {
+	display:flex;
+	flex-flow: row wrap;
+	align-items: center;
+	flex: 1 1 auto;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	border-left: 2px solid #D2BE57;
+	border-right: 2px solid #D2BE57;
+	/*Put a background as selected*/
+}
+
+
+
+
+.rufinaserif {
+	font-family: 'Rufina', serif;
+ 	font-weight: normal;
+}
+
+.customize {
+	font-family: 'Rufina', serif;
+ 	font-weight: bolder;
+ 	background: repeating-linear-gradient(60deg,#511C26 2.5%, #228B22 2.5% 5%, #F00 5% 7.5%,#000 7.5% 10%,#38299D 10% 12.5%);
+	-webkit-background-clip: text;
+	color: transparent;
+ }
+
+.underline {
+  border-bottom: 4px solid #D2BE57;
+  display: inline-block;
+  line-height: 1;
+}
+
+.pledgeButtons {
+			text-transform:uppercase;
+			background: repeating-linear-gradient(60deg,#511C26 2.5%, #228B22 2.5% 5%, #F00 5% 7.5%,#000 7.5% 10%,#38299D 10% 12.5%);
+			align-items: center;
+			justify-content: center;
+			-webkit-background-clip: text;
+			color: transparent;
+}
+
+.pledgelinks {
+			background: repeating-linear-gradient(60deg,#511C26 2.5%, #228B22 2.5% 5%, #F00 5% 7.5%,#000 7.5% 10%,#38299D 10% 12.5%);
+			justify-content: center;
+			-webkit-background-clip: text;
+			color: transparent;
+			border-bottom: 4px solid #D2BE57;
+  			display: inline-block;
+  			line-height: 1;
+}
+
+
+.introPledge {
+	display:grid;
+	grid-area: header;
+	align-self: center;
+}
+/*This is the second part of the page*/
+.formSection {
+	display: grid;
+	grid-area: input;
+	align-self: center;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 3fr 1fr;
+	border-bottom: 2px solid #D2BE57;
+	grid-gap: 1rem;
+	padding: 0.5rem;
+}
+
+.explanationDiv {
+	display: flex;
+	align-content: flex-start;
+	justify-content: flex-start;
+	align-items: flex-start;
+	border-left: 2px solid #D2BE57;
+}
+.pledgeSettings {
+	display: flex;
+	flex-flow: row wrap;
+	border-right: 2px solid #D2BE57;
+}
+
+.firstSection {
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex: 1;
+	margin-right: 15%;
+}
+
+.secondSection {
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex: 3;
+}
+
+/*Style the colour selection list*/
+.colorElement {
+	float: left;
+	margin: 3px auto;
+  	border-bottom: 1px solid #D2BE57;
+  	display: inline-block;
+  	line-height: 1;
+
+}
+/*Create space between the colour elements*/
+.marginleft {
+	margin-left: 30%;
+}
+/*Set up the settings for pledge function*/
+.pledgeSettings {
+	display: inline-flex;
+	
+}
+
+/* For text heading*/
+.pledgeTitle {
+	font-family: 'Alegreya', serif;
+	font-weight: bold;
+	align-content: center;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	border-bottom: 4px solid #D2BE57;
+  	display: inline-block;
+  	line-height: 1;
+}
+
+/*Back button element*/
+ .backPledges {
+ 	font-family: 'Rufina', serif;
+ 	font-weight: bold;
+ 	background: repeating-linear-gradient(60deg,#511C26 2.5%, #228B22 2.5% 5%, #F00 5% 7.5%,#000 7.5% 10%,#38299D 10% 12.5%);
+	-webkit-background-clip: text;
+	color: transparent;
+	align-content: center;
+	font-size: 1.1rem;
+  	display: inline-block;
+  	border-bottom: 4px solid #D2BE57;
+  	line-height: 1;
+}
+
+
+/*Customizing the settings*/
+.settingHead {
+	font-family: 'Alegreya', serif;
+	font-weight: bold;
+	font-size: 0.9rem;
+	border-bottom: 4px solid #D2BE57;
+  	display: inline-block;
+  	line-height: 1;
+}
+
+/*For styling the back button*/
+.pledgeFig {
+			font-family:'Rufina', serif;
+			font-size: large;
+			font-weight: bold;
+			align-content: center;
+			font-size: 1.1rem;
+		  	display: inline-block;
+		  	border-bottom: 4px solid #D2BE57;
+  			line-height: 1;
+}
+
+/*For the heading part */
+.intro {
+ 	font-family: 'Alegreya', serif;
+	font-weight: normal;
+	font-size: 1.2rem;
+	text-shadow: 1px 1px white;
+	align-content: center;
+	letter-spacing: normal;
+}
+/*For the paragraphs*/
+.introParagraph {
+	font-family: 'Alegreya', serif;
+ 	font-weight:small;
+ 	align-content: center;
+ 	text-decoration: none
+}
+
+.item {
+	width: 100%;
+	height: 100%;
+}
+
+/*The footer region*/
+/*Making this a grid session*/
+.footer {
+display :grid;
+grid-template-rows: 3fr 1fr;
+grid-template-columns:1fr;
+grid-gap: 1%;
+}
+
+.recentPledges {
+	display: grid;
+	max-height: 350px;
+	grid-template-rows: 50px 300px;
+	grid-template-columns: 1fr;
+	grid-gap: 2px;
+}
+
+.canvasContainer {
+	display: flex;
+	max-height: 300px;
+	flex-flow: row wrap;
+	border-bottom: 2px solid #D2BE57;
+}
+
+.canvasContainer > div {
+	flex: 1;
+}
+
+
+.footerSection {
+	display: grid;
+	max-height: 100px;
+}
+
+.footerContainer {
+	display: flex;
+	flex-flow:row wrap;
+	align-items: baseline;/*To keep the items at the bottom of the container*/
+	align-content: flex-end;
+	justify-content: center;
+}
+
+.footerContainer > div {
+	flex:1;
+
+}
+/*This is to style the header in footer*/
+.footerH3 {
+
+	font-family: 'Alegreya', serif;
+	font-weight: normal;
+	font-size: 1.2rem;
+	align-content: center;
+	letter-spacing: normal;
+ 	background: repeating-linear-gradient(60deg,#511C26 2.5%, #228B22 2.5% 5%, #F00 5% 7.5%,#000 7.5% 10%,#38299D 10% 12.5%);
+	-webkit-background-clip: text;
+	color: transparent;
+	align-content: center;
+}
+
+.footerImage {
+	max-height: 100px;
+	max-width: 100px;
+	background-attachment: scroll;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*This is to style the footer menu*/
+.enlarge {
+	/*flex-grow: 2;
+	flex-shrink: 1;
+	flex-basis: auto;*/
+	flex:2 1 auto;
+}
+
+.minimise {
+	/*flex-grow: 1;
+	flex-shrink: 2;
+	flex-basis: auto;*/
+	flex:2 1 auto;
+}
+
+

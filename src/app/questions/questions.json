@@ -1,0 +1,363 @@
+/*This will be the set of questions to be asked to the SMEs associated accounts*/
+[
+  /*Personal Information*/
+      personal:{
+          introduction:"Karibu Mzynga",
+          firstName:"firstName",
+          surname:"Surname",
+          phoneNumber:"Phonenumber",
+          pasword:"Password",
+          confirmPassword:"confirmPassword",
+          email:"Email"
+      },
+            //Password reset
+    PasswordSettingComponent : {
+              password:"Enter password",
+              confirmPassword: "Re-enter password"
+        },
+       ActivationCodeComponentComponent : {
+              activation:"Enter activation code"
+        },
+  /*Company Information*/
+      businessInfo:{
+          physicalLocation:"Physical Location",
+          postOfficeAddress : "Address",
+          businessPhoneNumber: "Business Phone Number",
+          companyEmail:"Company mail",
+          website:"website",
+          marketPresent:{
+            type:"selection",
+            options:{
+              eastAfrica:"eastAfrica",
+              southAfrica:"southAfrica",
+              westAfrica:"westAfrica",
+              northAfrica:"northAfrica"
+            }
+          },
+          countriesPresent:{
+
+            type:"selection",
+
+            options:{
+
+              eastAfrica:{
+                kenya:"Kenya",
+                uganda:"Uganda",
+                Tanzania:"Tanzania",
+                Rwanda:"Rwanda",
+                DRC:"DRC",
+                Burundi:"Burundi",
+                sSudan:"South Sudan"
+              },
+
+              southAfrica:{
+                southAfrica:"SouthAfrica",
+                mozambique:"Moambique",
+                malawi:"Malawi",
+                lesotho:"Lesotho",
+                zimbambwe:"Zimbambwe",
+                swaziland:"Swaziland",
+                zambia:"Zambia",
+                namibia:"Namibia",
+                bostwana:"Bostwana",
+                angola:"Angola"
+              },
+
+              westAfrica:{
+                nigeria:"nigeria",
+                senegal:"senegal",
+                ghana:"Ghana",
+                sieraleone:"Sieraleone",
+                chad:"Chad",
+                niger:"Niger"
+              },
+              northAfrica:{
+                algeria:"Algeria",
+                morocco:"Morocco",
+                egypt:"Egypt",
+                sudan:"Sudan",
+                libya:"Libya",
+                westernSahara:"Western sahara",
+                tunisia:"Tunisia"
+              },
+              Ethiopia:"Ethiopia"
+
+            }
+          },
+
+          patents:{
+            type:"checkbox",
+            text:"Does your company hold any patents or copyrights"
+          },
+          products:{
+            type:"checkbox",
+            text:"what does your company deal with?",
+            options:{
+              services:"Services",
+              products:"Products",
+              both:"Service and Products"
+            }
+          },
+          workingdays:{
+            workdays:{
+              type:"selection",
+              options:{
+                monday:"Monday",
+                tuesday:"Tuesday",
+                wednesday:"Wednesday",
+                thursday:"Thursday",
+                friday:"Friday",
+                saturday:"Saturday",
+                sunday:"Sunday"
+              }
+            }
+          },
+         workinghours:{
+          workhours:{
+            type:"selection",
+            options:{
+              start:{
+                5:"5AM",
+                6:"6AM",
+                7:"7AM",
+                8:"8AM",
+                9:"9AM",
+                10:"10AM",
+                11:"11AM",
+                12:"12NOON"
+              },
+              end:{
+                1:"1PM",
+                2:"2PM",
+                3:"3PM",
+                4:"4PM",
+                5:"5PM",
+                6:"6PM",
+                7:"7PM",
+                8:"8PM",
+                9:"9PM",
+                10:"10PM",
+                11:"11PM",
+                12:"12AM"
+              }
+            }
+          }
+        },
+        //ProductInformationComponent for the most moving product
+        productArray : [{
+              productName:"Product Name",
+              imagePhoto:"Upload photo",
+        currentPrice :"Current product price",
+              description:"Write a short description of the product",
+              percentageRevenue:"Percentage revenue contributed by the product"
+              }],
+        //SMEInfoFormComponent
+        registeredName:"Registered business name",
+        registeredBizNumber : "Enter registration number",
+        industry:"Industry",
+        YOR:"Year of registration",
+        typeOfCompany:{
+          type:"selection",
+          options:{
+            ltd:"Limited Company",
+            plc:"Public limited company",
+            partnership:"Partnership"
+          }
+        },
+        contryOfRegistration:"Country of registration",
+        noofShares:"No of shares",
+        companyValues:"Company values"
+  }
+
+    //Employee Information
+
+    {
+      position : "Position at Ferris Air",
+      Department: "Which department at Ferris Air do you work",
+      AccesstoEscrow: {
+        access:"Access to Escrow",
+        type:"boolean"
+      },
+      COB:"Country of Birth",
+      Nationality:["Nationality"],//Type Array means more input options.
+      Language:{
+        language:"Language",
+        level:{
+          options:"Beginner,Intermediary,Expert",
+          type:"Dropdown"
+        },
+      },
+      //Date input
+      experience:{
+        currentExperience:{
+          from:"From",
+          to:"To"
+        },
+        pastExperience:{
+          place:"Company name",
+          from:"From",
+          to:"To"
+        }
+      },
+    }
+
+    //Finance Director Questions
+    {
+      monthlyIncome:"What's your average monthly revenue for the last year",//Use this to generate all reports.
+      maximumRevenue:"What's your maximum revenue since registration",
+      averageRevenue:"Average revenue last 5 years",
+      revenueLast5yrs: [ //5 years to save the data.
+        {
+        year:"Year",
+        amount:"amount"
+        }
+        ],
+      loans:{
+        loans:"Any outstanding loans to any bank ?",
+        bank:"Name of Bank",
+        AmountInKshs:"Amount in Kshs",
+        frequencyOfPayment:{
+          type:"dropdown",
+          options:["Monthly","Quartely","Semi-annually","Yearly"],
+          amount:"Amount",
+          balancePending:"Amount pending on bank loan",
+          interestRate:"What's the interest rate for the banks?"
+        }
+      },
+      assetBase:"What is your current asset base value?",
+      revenueProjection:"Revenue projection next 5 years",
+      industry:"Industry report for the next 10 years detailing risk analysis and challenges",
+      shares:{
+        question:"Do you have shares in Ferris Air",
+        type:"checkbox",
+        options:["YES","NO"]
+      },
+      howMany:"How many shares ?",
+      howLong:{
+        question:"How long?",
+        type:"Checkbox",
+        options:["foundingshares","2yrsbefore"]
+      },
+      representedbyshares:"What percentage of shares are represented by your shares",
+      typeofShares:"What type of shares are they?",
+      agreements:"Are your shares bound by any agreement?",
+      sellingPrice:"Were you to sell your shares what would be your price?",
+      buyingPrice:"Would you be willing to buy more shares what would be the price?",
+      familyBiz:"Is Ferris Air a family business ?",
+      noShares:{
+        question:"Why don't you own ferris air shares ?",
+        type:"textbox"
+      },
+      socialmedia:{
+        question:"Do you use any social media ?",
+        type:"checkbox"
+      },
+      howoften:{
+        question:"how often do you use social media?",
+        type:"checkbox",
+        options:["Daily","Weekly","Monthly"]
+      },
+      socialsites:{
+        question:"Which of these do you use ?",
+        type:"checkbox",
+        options:["facebook","twitter","whatsapp","Instagram","Wechat","Others"]
+      },
+      rate:"Before you leave we could love to have you rate our service ?"
+    }
+    //Skills template
+    {
+      background:"What's your background ?",
+      skills:"What is your strongest skill ?",
+      addvalue:"How does strongest skill add value to ferris air ?",
+      job:{
+        question:"Do you love what you do at work ?",
+        type:"checkbox",
+        options:["YES","NO"]
+      },
+      workEnv:"How can you help Mzynga technology improve the work environment ?",
+      weakestPoint:"In your professional life where is your weakest point ?",
+      education:"What's your highest level of education ?",
+      professionalDev:"How much time in a day can you spare to do professional development ?",
+      showSkill:{
+        question:"Would you be willing to teach/show your strongest skills ?",
+        type:"checkbox",
+        options:["Yes for free","Yes with some payment","Would instead love to mentor someone","Would love but no time","No"]
+      },
+      media:{
+        question:"What media of communication is most appropriate for you ?",
+        type:"checkbox",
+        options:["Videos","Audio/podcasts","Printed materials eg books","Seminars"]
+      }
+      workEnv:"How can Ferris Air improve your work experience ?",
+      leadership:{
+        question:"What do you think about the leadership of Ferris Air ?",
+        type:"checkbox",
+        options:["Great","Okay","Could improve","Poor"]
+      }
+      leadershipOpinion:"Were you in leadership what would you do differently ?",
+      departments:{
+        question:"Could you help us rate your departments ?",
+        type:"checkbox",
+        options:["Department","Department1","Department2","Department3","Department4"]
+      },
+      departmentbest:"Why do you think department is best ?",
+      lesson:"What do you think worst department can learn from best department ?"
+    }
+    //Social template
+    {
+      outings:"Does Mzynga technology have team buildings ?",
+      often:"How often does the outings happen?",
+      enjoy:{
+        question:"Do you enjoy company outings ?",
+        type:"checkbox",
+        options:["YES","NO"],
+        why:"Why"
+      },
+      noSocial:"Why doesn't Mzynga technology have social outings ?",
+      weakestDepartment:"Which is the weakest department ?",
+      strongestDepartment:"Which is the strongest department ?"
+    }
+  //Organization Structure
+  {
+    boardOfDirectors : {
+      question:"Do you have a board of directors ? ",
+      type:"Checkbox",
+      options:["YES","NO"]
+    },
+    enterEmailAddress:"Enter email address of the chairman we will send him an email with a few questions ?",
+    ceoBoardChair : {
+      question:"Is the CEO/MD same as board's chairman ? ",
+      type:"Checkbox",
+      options:["YES","NO"]
+    },
+    ceomdAddress:"Enter email address of the chairman we will send him an email with a few questions ?",
+    highestOffice:"What's the title of the highest office in your company ?",
+    departments:"How many departments does company have ?",
+    departmentName:"What's the department name ?",
+    legalsServices:{
+      question:"How do you get legal services ? ",
+      type:"Checkbox",
+      options:["Inhouse legal team","Outsource"]
+    },
+    legalRepresentation:{
+      question:"Can we use your legal team to represent you in this investment campaign ? ",
+      type:"Checkbox",
+      options:["YES","NO"]
+    },
+    devTeamProd/Ser:{
+      question:"Do you have product/service development team ? ",
+      type:"Checkbox",
+      options:["YES","NO"]
+    },
+    sourceRawMaterials:{
+      question:"Does your product/service depend on sourcing raw materials either abroad or locally ? ",
+      type:"Checkbox",
+      options:["YES","NO"]
+    },
+    marketResearch:{
+      question:"Do you have a team dedicated to market research ? ",
+      type:"Checkbox",
+      options:["YES","NO"]
+    },
+
+  ]

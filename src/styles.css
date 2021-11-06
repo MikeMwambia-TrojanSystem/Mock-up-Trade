@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Bellefair:100|family=Playfair+Display|family=Rufina|family=Alegreya|family=Work+Sans|family=IBM+Plex+Mono:400i&display=swap');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~animate.css/animate.min";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,1060 @@
+<body class="pageLayout">
+	<section class="body">
+		<section class="menu-section-left" [ngClass]="status ? 'open' : 'close'">
+			<button class="menuCloseBtn" (click)="status=!status">
+				<img src="../../assets/close-icon.svg"/>
+			</button>
+
+			<section class="logo-section">
+				<div class="logo-img">
+          <a [routerLink]="['/LandingPageComponent']">
+					<img src="assets/footerDope.svg" alt="Mzynga Technology" style="height:200px;width:200px">
+          </a>
+				</div>
+        <div class="notify">
+        <div class="notSection"
+        ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item><span class="urlfront">+ Investment process</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/InvestmentPageComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Inv. chances (113,467)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Request partnerships</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/PledgeComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ P.ship chances (12,467)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item><span class="urlfront">+ Request deal</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/BusinessDealsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Deal chances(83,467)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/JobsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Job (19,13,467)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/LandingPageComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Homepage</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+        </div>
+			</section>
+
+		</section>
+		<section class="menu-section-centre">
+			<!--THIS IS THE FIRST SECTION-->
+			<section class="searchsort-element">
+				<div class="searchSection positionSticky">
+					<div class="headerTop" style="width: 100%">
+						<div class="menuBtn">
+							<button type="button" class="btn" (click)="status=!status" ><img src="../../assets/menu-button.svg"/></button>
+						</div>
+						<mat-form-field [floatLabel]="Mzynga" class="searchInput">
+							<mat-label>Search for Investment opportunities</mat-label>
+							<input matInput placeholder="Enter name to search">
+						</mat-form-field>
+						<button mat-stroked-button class="searchbutton"><span
+								class="linkClass">Search</span></button>
+								<section class="accountSection">
+									<div class="accountSectionFlex">
+										<h2>
+											To invest
+											<button mat-stroked-button class="menuBttn">
+												<span class="linkClass">Log In
+												</span>
+											</button>
+										</h2>
+									</div>
+								</section>
+					</div>
+					</div>
+				<div class="search-Element">
+					<div class="investIntro">
+						<dl class="investSection">
+							<dt class="intro">To Invest :</dt>
+							<dt class="introText"><span class="underlineBlack">Make a choice</span></dt>
+							<dd class="introParagraph">On this page you fill all opportunities that listed for
+								fundraising today,
+								for other days check out the <span class="investmentLink">dates section</span> on the
+								<span class="investmentLink">left.</span>
+							</dd>
+							<dt class="introText"><span class="underlineBlack">Make Payment</span></dt>
+							<dd class="introParagraph">Once you have gotten your ideal opportunity,make payment through
+								any of our partner
+								<span class="investmentLink">saccos</span>,<span class="investmentLink">banks</span> or
+								<span class="investmentLink">payment services</span>.</dd>
+							<dt class="introText"><span class="underlineBlack">Await confirmation notification</span>
+							</dt>
+							<dd class="introParagraph">The online notification will be immediate while the legal
+								documentation and final confirmation will commence.<br><a class="investmentLink">Learn
+									more</a>
+							</dd>
+						</dl>
+						<dl class="investSection">
+							<dt class="intro">To Seek Investment :</dt>
+							<dt class="introText"><span class="underlineBlack">Tell us about your company.</span></dt>
+							<dd class="introParagraph">Tell us about your company , where you are and what you do by
+								starting
+								<span class="investmentLink">here</span>.
+							</dd>
+							<dt class="introText"><span class="underlineBlack">Let us know investment you need.</span>
+							</dt>
+							<dd class="introParagraph">Clearly describe to potential investors the investments you
+								need.These can be
+								<span class="investmentLink">time</span> , <span class="investmentLink">energy</span> or
+								<span class="investmentLink">skill</span> investment needs.</dd>
+							<dt class="introText"><span class="underlineBlack">Not sure what you need to offer ?</span>
+							</dt>
+							<dd class="introParagraph">If you are not sure whether your potential investors will value
+								what you are offering,try our <span class="investmentLink">pledge process</span> and get
+								a clearer understanding.<br><a class="investmentLink">Learn more</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+
+
+				<div class="notification-Element">
+
+					<div class="upper-notification">
+
+						<div class="upper-notification1">
+
+
+
+
+
+							<div class="flex-container">
+
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+							</div>
+
+
+
+
+						</div>
+
+
+
+
+
+						<div class="middle-uppernotification">
+
+
+
+
+
+
+							<div class="flex-container">
+									<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+							</div>
+
+
+
+
+
+						</div>
+
+
+
+
+
+
+						<div class="middle-lowernotification">
+
+
+							<div class="flex-container">
+									<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+							</div>
+
+
+						</div>
+
+
+
+
+
+						<div class="lower-notification">
+
+
+
+
+							<div class="flex-container">
+
+									<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+							</div>
+
+						</div>
+
+						<div class="lower-notification">
+							<div class="flex-container">
+
+
+
+
+
+
+									<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+								<mat-card class="flex-video">
+								<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+								 style="height: 250px;width: 350px">
+								<mat-card-content>
+										<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+										</p>
+										<p>
+										<span class="valuationTitle">Current Valuation :-
+										<span class="underline">USD$ 5,000,000</span>
+										</span>
+										<br>
+										<span class="daysNotification">Posted 2 days ago</span>
+										</p>
+										<div class="notificationSection">
+										<span class="iconsRight">
+										<i class="material-icons">payment</i>
+										<span class="addToWatchlist">400</span>
+										</span>
+
+										<span class="iconsLeft">
+										<i class="material-icons">people_outline</i>
+										<span class="addToWatchlist">500</span>
+										</span>
+										</div>
+									</mat-card-content>
+									<mat-card-actions>
+										<button mat-button class="linkClass">+ See Investment</button>
+										<button mat-button class="linkClass">+ Add to Watchlist</button>
+									</mat-card-actions>
+								</mat-card>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+		</section>
+
+				<section class="menu-section-right">
+
+
+			<section class="monthSection">
+				<section>
+					<div class="arrow-down"></div>
+				</section>
+				<section>
+					<h3 class="linkClass">October</h3>
+				</section>
+				<section>
+					<div class="arrow-up"></div>
+				</section>
+			</section>
+			<section class="dateSection">
+				<div class="preview">
+					<div class="arrow-right"></div>
+					<div>
+						<p class="alegreyaserif">PREV </p>
+					</div>
+
+				</div>
+				<div class="first">
+					<div class="firstInner">
+						<h2 class="badge1" data-badge="27">11</h2>
+					</div>
+				</div>
+				<div class="first">
+					<div class="firstInner">
+						<h2 class="badge1" data-badge="19">12</h2>
+					</div>
+				</div>
+
+				<div class="first">
+					<div class="firstInner">
+						<h2 class="badge1" data-badge="2K">13</h2>
+					</div>
+				</div>
+				<div class="first">
+					<div class="firstInner">
+						<h2 class="badge1" data-badge="200">14</h2>
+					</div>
+				</div>
+				<div class="first">
+					<div class="firstInner">
+						<h2 class="badge1" data-badge="2.5K">15</h2>
+					</div>
+				</div>
+				<div class="first">
+					<div class="firstInner">
+						<h2 class="badge1" data-badge="104">16</h2>
+					</div>
+				</div>
+				<div class="first">
+					<div class="firstInner">
+						<h2 class="badge1" data-badge="3">17</h2>
+					</div>
+				</div>
+				<div class="first">
+					<div class="firstInner">
+						<h2 class="badge1" data-badge="67">18</h2>
+					</div>
+				</div>
+				<div class="first">
+					<div class="firstInner">
+						<h2 class="badge1" data-badge="23K">19</h2>
+					</div>
+				</div>
+				<div class="first">
+					<div class="firstInner">
+						<h2 class="badge1" data-badge="287">20</h2>
+					</div>
+				</div>
+				<div class="next">
+					<div>
+						<p class="alegreyaserif">NEXT </p>
+					</div>
+					<div class="arrow-left"></div>
+				</div>
+				<div class="next">
+					<div>
+						<p class="alegreyaserif">HIDE </p>
+					</div>
+					<div class="arrow-left"></div>
+				</div>
+			</section>
+
+
+		</section>
+
+
+	</section>
+
+	<section class="footer">
+
+
+		<div class="footerContentRow">
+			<section class="footergridcontainer">
+				<div class="footergrid">
+					<h2 class="footerHeader">INVESTMENT STAGE</h2>
+					<h3 class="footerHeader3">Are you ready to welcome investors ?</h3>
+					<p class="footerParagraph">
+						We provide an easy path for your business to <span class="underlineBlack">seek
+							investments</span> ,
+						<span class="underlineBlack">seek partnerships</span> , <span class="underlineBlack">vet
+							investors</span> and accept any form of investment needed for your company growth.</p>
+					<p class="footerParagraph">Looking for an investment opportunity ?<br>
+						We have <span class="underlineBlack">135,700</span> opportunities in <span
+							class="underlineBlack">50</span> regions across <span class="underlineBlack">5</span>
+						countries.
+					</p>
+				</div>
+
+
+			</section>
+			<section class="footergridcontainer">
+				<div class="footerPledgeDeals">
+					<h2 class="footerHeader">PLEDGE STAGE</h2>
+					<h3 class="footerHeader3">Not sure which deal to offer investors ?</h3>
+					<p class="footerParagraph">Try seeking different pledges untill you get one that is best for your
+						company.</p>
+					<p class="footerParagraph">We have <span class="underlineBlack">23,567</span> pledge opportunities
+						across
+						<span class="underlineBlack">50</span> regions in <span class="underlineBlack">3</span>
+						countries.
+					</p>
+				</div>
+			</section>
+
+			<section class="footergridcontainer">
+				<div class="footerPledgeDeals">
+					<h2 class="footerHeader">BUSINESS DEALS</h2>
+					<h3 class="footerHeader3">Looking to close business deals ?</h3>
+					<p class="footerParagraph">These are deals seeking <span class="underlineBlack">partnerships,
+						</span>
+						<span class="underlineBlack">time,</span> <span class="underlineBlack">energy</span> or <span
+							class="underlineBlack">skill</span> investments.You will also have the chance to
+						<span class="underlineBlack">run product surveys</span> ,
+						<span class="underlineBlack">analyse business models</span> and
+						<span class="underlineBlack">work analysis</span> for your company.</p>
+					<p class="footerParagraph">We have <span class="underlineBlack">83,467</span> business deals from
+						organizations at pledge and investment stage.</p>
+				</div>
+
+			</section>
+			<section class="footergridcontainer">
+				<div class="footergridwork">
+					<h2 class="footerHeader">WORK OPPORTUNITIES</h2>
+					<h3 class="footerHeader3">Are you looking for a part time or full time job ?</h3>
+					<p class="footerParagraph">
+						All work opportunities currently listed are generated by SMEs seeking investment or pledges.The
+						opportunities range from <span class="underlineBlack">consultancy services</span> , <span
+							class="underlineBlack">full time jobs</span> , <span class="underlineBlack">part time</span>
+						and
+						<span class="underlineBlack">one off tasks</span>.
+					</p>
+					<p class="footerParagraph">
+						We have <span class="underlineBlack">9,873,467</span> work opportunities across
+						<span class="underlineBlack">14</span> industries in
+						<span class="underlineBlack">100</span> organization across <span
+							class="underlineBlack">5</span>
+						regions.
+					</p>
+				</div>
+			</section>
+		</div>
+
+		<div class="footerBottomQuote">
+			<div class="bottomServiceRow">
+				<div class="footerbottom">
+					<div class="firstfooterflex">
+						<img src="assets/funding.svg" style="height: 100px;width: 100px">
+					</div>
+					<div class="secondfooterflex">
+						<h2><span>+</span> Seek Investments</h2>
+						<h2><span>+</span> Available Investments</h2>
+					</div>
+				</div>
+
+				<div class="pledgeBottom">
+					<div class="firstfooterflex">
+						<img src="assets/pledge.svg" style="height: 100px;width: 100px">
+					</div>
+					<div class="secondfooterflex">
+						<h2><span>+</span> Seek Partnerships</h2>
+						<h2><span>+</span> View Partnerships</h2>
+					</div>
+				</div>
+
+				<div class="dealsBottom footerLogo">
+					<div class="imgd"></div>
+				</div>
+
+				<div class="dealsBottom">
+					<div class="firstfooterflex">
+						<img src="assets/deals.svg" style="height: 100px;width: 100px">
+					</div>
+					<div class="secondfooterflex">
+						<h2><span>+</span> Post a Deal</h2>
+						<h2><span>+</span> Available deals</h2>
+					</div>
+				</div>
+				<div class="footerbottom">
+					<div class="firstfooterflex">
+						<img src="assets/job.svg" style="height: 100px;width: 100px">
+					</div>
+					<div class="secondfooterflex">
+						<h2><span>+</span> Jobs</h2>
+						<h2><span>+</span> Learn more</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+
+</body>

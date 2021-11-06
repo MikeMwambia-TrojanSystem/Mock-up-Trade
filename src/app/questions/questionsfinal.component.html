@@ -1,0 +1,213 @@
+
+<div class="header">
+
+<div class="bgGrid">
+
+<div class="flexContainer">
+  <div class="logo">
+    <a [routerLink]="['/LandingPageComponent']" style="text-decoration: none;">
+    <img width="90px" height="90px" class="logo" src="../../../assets/footerDope.svg" alt="MZYNGA TECH"/>
+    </a>
+  </div>
+  <div class="navTitle">
+    <span>
+        <a class="active smallIntroNoCB" href="#">Home</a>
+        <img src="../../../assets/play.svg" class="fa-play" alt="play" />
+        <a class="smallIntroNoCB" href="#">Shope</a>
+        <img src="../../../assets/play.svg" class="fa-play" alt="play" />
+        <a href="#" class="smallIntroNoCB">Account</a>
+        <img src="../../../assets/play.svg" class="fa-play" alt="play" />
+        <a href="#" class="smallIntroNoCB">Pages</a>
+        <img src="../../../assets/play.svg" class="fa-play" alt="play" />
+        <a href="#" class="smallIntroNoCB">Blog</a>
+    </span>
+  </div>
+</div>
+
+</div>
+
+<!--<d iv class="smGrid">
+
+  <div class="seemore-holder">
+    <h2 class="smallIntroNoCB">
+      <span class="underline">113,467</span>
+        more investment opportunities......
+      <span>
+        <button mat-stroked-button class="searchbutton">
+          <span class="seemoreClass">See more</span>
+        </button>
+      </span>
+    </h2>
+  </div>-->
+</div>
+
+
+<section>
+  <div class="content">
+
+
+      <div class="first-board-content">
+
+
+
+      <div class="first-board-navigation">
+            <span [class.current-step]="currentQuestion == 'question1'" *ngFor="let question of questions">
+            </span>
+              <!--
+              <span [class.current-step]="currentQuestion == 'question1'"></span>
+              <span [class.current-step]="currentQuestion == 'question2'"></span>
+              <span [class.current-step]="currentQuestion == 'question3'"></span>
+              <span [class.current-step]="currentQuestion == 'question4'"></span>
+              <span [class.current-step]="currentQuestion == 'question5'"></span>-->
+      </div>
+
+
+      <div class="first-board-text-wrapper">
+
+  <form [formGroup]="signup" class="tableClass">
+        <p class="centerContent">
+          <span class="karibu">{{currentQuestion}}</span>
+        </p>
+
+        <p>
+          <mat-form-field appearance="outline" style="display: inline;">
+          <mat-label>Phone  or email </mat-label>
+          <input matInput placeholder="Phone number or email address" formControlName="preferredName">
+          <mat-icon matSuffix>create</mat-icon>
+          </mat-form-field>
+
+        </p>
+
+        <p>
+          <mat-form-field appearance="outline" style="display:inline">
+          <mat-label>Password:</mat-label>
+          <input matInput placeholder="Enter password">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria.label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide?'visibility_off': 'visibility'}}</mat-icon>
+          </button>
+          </mat-form-field>
+
+        </p>
+
+        <p>
+          <span style="margin-left: 35%;margin-right: 35%">
+            <button mat-raised-button color="basic" type="submit">Log in
+            </button>
+          </span>
+        </p>
+
+        <p>
+            No account ? <a [routerLink]="['/signUp']"> Register </a>
+        </p>
+
+        <p>
+            Forgot password<a [routerLink]="['/passwordReset']"> Reset </a>
+        </p>
+
+        </form>
+      </div>
+
+      </div>
+
+  </div>
+
+  <div style="text-align: center">
+
+    <h2>
+      Country list from local JSON
+    </h2>
+  <ul *ngFor = "let item of questionList">
+    <li>
+      <h3>Country name : {{item.name}}, Code : {{item.code}}</h3>
+    </li>
+  </ul>
+  </div>
+
+</section>
+
+
+
+
+<div class="footer">
+<img src="../../../assets/footer.svg">
+
+<!--<div class="bottomServiceRow">-->
+<!--First Grid Investment
+
+<div class="footergrid">
+<div class="footerbottom">
+<div class="firstfooterflex">
+  <img src="../../../assets/funding.svg" style="height: 75px;width: 75px">
+</div>
+<div class="secondfooterflex">
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Seek Investments
+  </h2>
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Available Investments
+  </h2>
+</div>
+</div>
+</div>-->
+
+<!--Second Grid partnerships
+<div class="footergrid">
+<div class="footerbottom">
+<div class="firstfooterflex">
+  <img src="../../../assets/pledge.svg" style="height: 75px;width: 75px">
+</div>
+<div class="secondfooterflex">
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Seek Partnerships
+  </h2>
+  <h2 class="smallIntroNoCB">
+    <span>+</span> View Partnerships
+  </h2>
+</div>
+</div>
+</div>-->
+
+<!--Middle Grid Logo section
+<div class="logoFooter footerLogo">
+<div class="imgd"></div>
+</div>-->
+
+<!--Third Grid business deals
+
+<div class="footergrid">
+<div class="footerbottom">
+<div class="firstfooterflex">
+  <img src="../../../assets/deals.svg"
+  style="height:75px;width:75px">
+</div>
+<div class="secondfooterflex">
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Post a Deal
+  </h2>
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Available deals
+  </h2>
+</div>
+</div>
+</div>-->
+
+<!--Fourth Grid Jobs
+<div class="footergrid">
+<div class="footerbottom">
+<div class="firstfooterflex">
+  <img src="../../../assets/job.svg"
+  style="height:75px;width: 75px">
+</div>
+<div class="secondfooterflex">
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Jobs
+  </h2>
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Learn more
+  </h2>
+</div>
+</div>
+</div>
+</div>-->
+
+</div>

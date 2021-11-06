@@ -1,0 +1,208 @@
+
+
+<div class="header">
+
+<div class="bgGrid">
+
+<div class="flexContainer">
+  <div class="logo">
+    <a [routerLink]="['/LandingPageComponent']" style="text-decoration: none;">
+    <img width="90px" height="90px" class="logo" src="../../../assets/footerDope.svg" alt="MZYNGA TECH"/>
+    </a>
+  </div>
+  <div class="navTitle">
+    <span>
+        <a class="active smallIntroNoCB" [routerLink]="['/LandingPageComponent']">Home</a>
+        <img src="../../../assets/play.svg" class="fa-play" alt="play" />
+        <a class="smallIntroNoCB" href="#">Shope</a>
+        <img src="../../../assets/play.svg" class="fa-play" alt="play" />
+        <a href="#" class="smallIntroNoCB">Account</a>
+        <img src="../../../assets/play.svg" class="fa-play" alt="play" />
+        <a href="#" class="smallIntroNoCB">Pages</a>
+        <img src="../../../assets/play.svg" class="fa-play" alt="play" />
+        <a href="#" class="smallIntroNoCB">Blog</a>
+    </span>
+  </div>
+</div>
+</div>
+
+<div class="smGrid">
+<div class="seemore-holder">
+  <h2 class="smallIntroNoCB">
+      <span class="underline">113,467</span>
+        more investment opportunities......
+      <span>
+        <button mat-stroked-button class="searchbutton">
+          <span class="seemoreClass">See more</span>
+        </button>
+      </span>
+  </h2>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="content">
+  <div class="first-board-wrapper">
+
+        <div class="innerFlex">
+
+
+
+
+          <div class="first-board-content">
+
+
+            <div class="first-board-navigation">
+            <span [class.current-step]="currentQuestion == 'question1'" *ngFor="let question of questions">
+            </span>
+            </div>
+
+            <div class="first-board-text-wrapper">
+              <div class="first-board-text">
+            <div *ngFor="let question of questions">
+                <form  [formGroup]="signup" (ngSubmit)="switchQuestion('question.no')">
+                <h3>
+                  <span class="karibu">{{question.title}} create account</span>
+                </h3>
+                <p>
+                    <span *ngIf="question.no === currentQuestion">
+                      {{question.text}}
+                    </span>
+                </p>
+                <p>
+                  <input placeholder="Your Password" maxlength="32"
+                  formControlName="preferredName"/>
+                </p>
+                <p>
+                  <span>Already have an account ?
+                    <a> Log in</a>
+                  </span>
+                </p>
+                <button class="first-board-continue-footer">
+                  <span class="seemoreClass">Submit</span>
+                  </button>
+          </form>
+          </div>
+
+
+
+
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="innerFlex">
+          <div class="first-board-image-wrapper">
+            <div *ngFor="let question of questions">
+              <p class="preview">{{question.title}}</p>
+              <p class="preview">{{question.subtitle}}</p>
+            </div>
+          </div>
+
+
+
+  </div>
+</div>
+
+
+
+
+<div class="footer">
+<div class="row h-100">
+
+<div class="bottomServiceRow">
+
+<!--First Grid Investment-->
+<div class="footergrid">
+<div class="footerbottom">
+<div class="firstfooterflex">
+  <img src="../../../assets/funding.svg" style="height: 75px;width: 75">
+</div>
+<div class="secondfooterflex">
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Seek Investments
+  </h2>
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Available Investments
+  </h2>
+</div>
+</div>
+</div>
+
+<!--Second Grid partnerships-->
+<div class="footergrid">
+<div class="footerbottom">
+<div class="firstfooterflex">
+  <img src="../../../assets/pledge.svg" style="height: 75px;width: 75px">
+</div>
+<div class="secondfooterflex">
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Seek Partnerships
+  </h2>
+  <h2 class="smallIntroNoCB">
+    <span>+</span> View Partnerships
+  </h2>
+</div>
+</div>
+</div>
+
+<!--Middle Grid Logo section-->
+<div class="logoFooter footerLogo">
+<div class="imgd"></div>
+</div>
+
+<!--Third Grid business deals-->
+
+<div class="footergrid">
+<div class="footerbottom">
+<div class="firstfooterflex">
+  <img src="../../../assets/deals.svg"
+  style="height:75px;width:75px">
+</div>
+<div class="secondfooterflex">
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Post a Deal
+  </h2>
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Available deals
+  </h2>
+</div>
+</div>
+</div>
+
+<!--Fourth Grid Jobs-->
+<div class="footergrid">
+<div class="footerbottom">
+<div class="firstfooterflex">
+  <img src="../../../assets/job.svg">
+</div>
+<div class="secondfooterflex">
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Jobs
+  </h2>
+  <h2 class="smallIntroNoCB">
+    <span>+</span> Learn more
+  </h2>
+</div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+</div>

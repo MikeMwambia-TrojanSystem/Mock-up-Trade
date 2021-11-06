@@ -1,0 +1,270 @@
+<body>
+	<div class="bodygrid">
+
+	<div class="item">
+		<div class="topMenu">
+
+		<div class="flexContainer">
+		<h1 class="pledgeMenu">
+		<span>
+		<i class="material-icons">
+		arrow_back_ios
+		</i>
+		</span>
+		<span class="backPledges">Pledges</span>
+		<span class="pledgeFig">&nbsp;(134,890)</span>
+		</h1>
+		</div>
+
+		<div class="centreContent">
+		<mat-tab-group mat-align-tabs="center">
+  		<mat-tab>
+  		<ng-template mat-tab-label>
+  		<span matBadge="47" matBadgeOverlap="false" class="customize">Your pledges</span>
+      	<!--<span class="customize">Your Pledges</span>-->
+    	</ng-template>
+    	<h3 class="rufinaserif">You have made <span class="underline">47 pledges</span> 
+    		and sought <span class="underline">4 pledges</span> so far and&nbsp;
+    		there are <span class="underline">134,890</span> more pledge opportunities&nbsp;
+    	<button mat-stroked-button class="menuBttn" [routerLink]="['/InvestmentPageComponent']">
+		<span class="pledgeButtons">See all</span>
+		</button>
+		</h3>
+  		</mat-tab>
+  		<mat-tab>
+  		<ng-template mat-tab-label>
+  		<span matBadge="1.." matBadgeOverlap="false" class="customize">Your gifts</span>
+    	</ng-template>
+    	<h3 class="rufinaserif">You have won <span class="underline">324</span> pledge gifts
+    	and sold <span class="underline">42</span>&nbsp;donated <span class="underline">50</span>&nbsp;and exchanged the rest so far&nbsp;
+    	<button mat-stroked-button class="menuBttn" [routerLink]="['/InvestmentPageComponent']">
+		<span class="pledgeButtons">See all</span>
+		</button>
+		</h3>
+  		</mat-tab>
+  		<mat-tab>
+  		<ng-template mat-tab-label>
+  		<span matBadge="3" matBadgeOverlap="false" class="customize">Your sponsors</span>
+    	</ng-template>
+    	<h3 class="rufinaserif"><span class="pledgelinks">Mzynga</span>,<span class="pledgelinks">Safaricom</span>,<span class="pledgelinks">bidco</span>,are among your top <span class="pledgelinks">sponsors</span>,to sponsor a pledge check out <span class="underline">45,567</span> opportunities listed&nbsp;
+    	<button mat-stroked-button class="menuBttn" [routerLink]="['/InvestmentPageComponent']">
+		<span class="pledgeButtons">See all</span>
+		</button>
+		</h3>
+  		</mat-tab>
+  		<mat-tab>
+  		<ng-template mat-tab-label>
+  		<span matBadge="0" matBadgeOverlap="false" class="customize">Gift market</span>
+    	</ng-template>
+    	<h3 class="rufinaserif">You have not made any purchases yet&nbsp;there are <span class="underline">34,567</span> products listed&nbsp;
+    	<button mat-stroked-button class="menuBttn" [routerLink]="['/InvestmentPageComponent']">
+		<span class="pledgeButtons">See all</span>
+		</button>
+		</h3>
+  		</mat-tab>
+  		<mat-tab>
+  		<ng-template mat-tab-label>
+  		<span matBadge="0" matBadgeOverlap="false" class="customize">Donations</span>
+    	</ng-template>
+    	<h3 class="rufinaserif">You have not made any donations yet&nbsp;there are several donation opportunities available&nbsp;
+    	<button mat-stroked-button class="menuBttn" [routerLink]="['/InvestmentPageComponent']">
+		<span class="pledgeButtons">See all</span>
+		</button>
+		</h3>
+  		</mat-tab>
+		</mat-tab-group>
+		</div>
+
+		<div class="loginBttn">
+		<button mat-stroked-button class="searchbutton">
+		<span class="pledgeButtons">Log in</span>
+		</button>
+		</div>
+		</div>
+
+		<div class="titleSection">
+		<div class="titleHeader">
+		<h1 class="pledgeTitle">Set up your pledge campaign</h1>
+		</div>
+		</div>
+
+
+		<div class="introPledge">
+		<div class="centreContent">
+		<h2 class="intro">The pledge function will help you gather crucial data that is vital in understanding how to structure any investment deals to potential investors.
+		Be sure to enter title that will attract pledges to your campaign.
+		On the description ensure you give the best description of your company to provide the most accurate information and attract the right <a href="/">'fish'</a>.........<a href="/" class="introParagraph">Learn more</a>
+		</h2>
+		</div>
+		</div>
+
+	</div>
+
+	<div class="item">
+	<div class="formSection">
+	<div class="explanationDiv">
+	<h2 class="intro">
+	The title should be something appealing to potential investors at the same time capture the intention completely of your campaign.<br>
+	The description should be something that says in simple terms all about why you have a campaign and what you seek to achieve for 
+	your business both long term and short term &nbsp;<br><a href="/" class="introParagraph">See example</a>
+	</h2>
+	</div>
+
+	<div class="formClass">
+	
+	<!--<form [formGroup]="pledgeForm" (ngSubmit)="onPledge()" *ngIf="shouldshow">
+	<mat-form-field appearance="outline" style="width:50vw">
+	<mat-label>Pledge title </mat-label>
+	<input matInput placeholder="Enter title" formControlName="pledgeTitle">
+	<mat-icon matSuffix>create</mat-icon>
+	</mat-form-field>
+	<br>
+	<mat-form-field appearance="outline" style="width:50vw;">
+	<mat-label>Pledge description max 600 characters approximately 150 words</mat-label>
+    <textarea matInput placeholder="Write a description of your pledge maximum 300 characters" formControlName="pledgedescription" 
+    matTextareaAutosize matAutosizeMinRows=15 matAutosizeMaxRows=25>
+    </textarea>
+  	</mat-form-field>
+  	<br>
+  	<button mat-stroked-button class="previewButton" type="submit" [disabled]="!pledgeForm.valid" (click)="hideSection()">
+	<span class="previewStyle">Preview</span>
+	</button>
+	</form>-->
+	<div>
+	<canvas #pledgeBoard height="550px" width="1100px">
+	</canvas>
+	</div>
+	</div>
+
+	<div class="pledgeSettings">
+	<div class="firstSection">
+		<h1 class="settingHead">Text styles</h1>
+		<mat-list>
+		 <mat-list-item> Bold </mat-list-item>
+		 <mat-list-item> Italics </mat-list-item>
+		 <mat-list-item> Underline </mat-list-item>
+		</mat-list>
+		<h1 class="settingHead">Text size</h1>
+		<mat-list>
+		 <mat-list-item> Large </mat-list-item>
+		 <mat-list-item> Medium </mat-list-item>
+		 <mat-list-item> Small </mat-list-item>
+		</mat-list>
+	</div>
+
+	<div class="secondSection">
+	<h1 class="settingHead">Text color</h1>
+		<mat-list>
+		<mat-list-item class="colorElement">
+		<canvas width="25px" height="25px" style="background-color: #000000"></canvas>
+		<span class="marginleft">Black</span>
+		</mat-list-item>
+
+		<mat-list-item class="colorElement">
+		<canvas width="25px" height="25px" style="background-color: #A9A9A9"></canvas>
+		<span class="marginleft">DarkGrey</span>
+		</mat-list-item>
+
+		<mat-list-item class="colorElement">
+		<canvas width="25px" height="25px" style="background-color: #D2BE57"></canvas>
+		<span class="marginleft">Mzynga Gold</span>
+		</mat-list-item>
+
+		<mat-list-item class="colorElement">
+		<canvas width="25px" height="25px" style="background-color: #00FFFF"></canvas>
+		<span class="marginleft">Aqua</span>
+		</mat-list-item>
+
+		<mat-list-item class="colorElement">
+		<canvas width="25px" height="25px" style="background-color: #ADFF2F"></canvas>
+		<span class="marginleft">GreenYellow</span>
+		</mat-list-item>
+
+		<mat-list-item class="colorElement">
+		<canvas width="25px" height="25px" style="background-color: #7FFF00"></canvas>
+		<span class="marginleft">Chartreuse</span>
+		</mat-list-item>
+		</mat-list>
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<div class="footer">
+
+		<div class="recentPledges">
+
+		<div class="pledgeMenu">
+		<h1 class="backPledges">
+		Recently published campaigns.
+		</h1>
+		</div>
+
+		<div class="canvasContainer">
+
+		<div>
+		<canvas width="250px" height="250px" style="background-color: #7FFF00"></canvas>
+		</div>
+		<div>
+		<canvas width="250px" height="250px" style="background-color: #ADFF2F"></canvas>
+		</div>
+		<div>
+		<canvas width="250px" height="250px" style="background-color: #00FFFF"></canvas>
+		</div>
+		<div>
+		<canvas width="250px" height="250px" style="background-color: #D2BE57"></canvas>
+		</div>
+		<div>
+		<canvas width="250px" height="250px" style="background-color: #A9A9A9"></canvas>
+		</div>
+		<div>
+		<canvas width="250px" height="250px" style="background-color: #000000"></canvas>
+		</div>
+
+		</div>
+
+		</div>
+
+
+		<div class="footerSection">
+
+
+		<div class="footerContainer">
+
+		<div class="enlarge">
+		<h3 class="footerH3">
+		<span matBadge="47" matBadgeOverlap="false">Investments</span>
+		</h3>
+		</div>
+
+		<div class="enlarge">
+		<h3 class="footerH3">
+		<span matBadge="4k" matBadgeOverlap="false">Pledges</span>
+		</h3>
+		</div>
+
+		<div class="minimise">
+		<img src="assets/footerDope.svg" class="footerImage">
+		</div>
+
+		<div class="enlarge">
+		<h3 class="footerH3">
+		<span matBadge="4..." matBadgeOverlap="false">Business deals</span>
+		</h3>
+		</div>
+
+		<div class="enlarge">
+		<h3 class="footerH3">
+		<span matBadge="457" matBadgeOverlap="false">Jobs</span>
+		</h3>
+		</div>
+
+		</div>
+
+		</div>
+
+	</div>
+
+		
+	</div>
+</body>

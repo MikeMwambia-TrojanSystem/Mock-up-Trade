@@ -1,0 +1,216 @@
+<body class="pageLayout">
+  <section class="bodyIndividual">
+
+    <section class="menu-section-left" [ngClass]="status ? 'open' : 'close'">
+      <button class="menuCloseBtn" (click)="status=!status">
+        <img src="../../assets/close-icon.svg"/>
+      </button>
+
+      <section class="logo-section">
+        <div class="logo-img">
+          <a [routerLink]="['/LandingPageComponent']">
+          <img src="assets/footerDope.svg" alt="Mzynga Technology" style="height:200px;width:200px">
+          </a>
+        </div>
+        <div class="notify">
+
+        <div class="notSection"
+        ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item><span class="urlfront">+ Banks(45)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/InvestmentPageComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Saccos(1,234)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Investment firms(456)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/PledgeComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Verified individuals(108,789)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        </div>
+      </section>
+
+    </section>
+
+    <section class="menu-section-centre">
+      <!--THIS IS THE FIRST SECTION-->
+    <section class="searchsort-element">
+        <div class="searchSection positionSticky">
+          <div class="headerTop" style="width: 100%">
+        <section>
+            <div class="menuBtn">
+              <button type="button" class="btn" (click)="status=!status" ><img src="../../assets/menu-button.svg"/></button>
+            </div>
+        </section>
+        <section>
+          <h2 class="introTextIndividual">
+          <span class="underlineBlack">
+            Choose a financial partner
+          </span>
+          </h2>
+        </section>
+            <section class="accountSection">
+              <div class="accountSectionFlex">
+                <h2>To invest
+                  <button mat-stroked-button class="menuBttn">
+                    <span class="linkClass">
+                      Log In
+                    </span>
+                  </button>
+                </h2>
+              </div>
+            </section>
+          </div>
+          </div>
+
+
+        <div class="notification-Element">
+
+        <div class="upper-notification">
+
+        <div class="upper-notification1">
+        <div class="headerInvestment">
+        <dt  class="introTextIndividual">
+        <span class="underlineBlack">Financial partner</span>
+        </dt>
+        <dd class="introIndividual">Lorem ipsum dolor sit amet, ne sed inimicus ullamcorper. Ex sumo melius inciderint sed, at qui ullum recteque? Ex sed assum tritani quaerendum, invidunt accusata delicata sit te, pro enim prima ipsum at! Ad vim habemus recusabo voluptatum, ei quem molestie percipitur pri. Nam in veniam aeterno rationibus, lorem argumentum no quo, est eu commune expetenda rationibus.</dd>
+        <dd>Phase 1 : Kshs 450,567,789<br>
+          Phase 2 : Kshs 345,678,900<br>
+          Phase 3 : Kshs 230,456,890</dd>
+        <dd class="introIndividual"> Lorem ipsum dolor sit amet, nec saepe graecis delectus ne, id sint virtute contentiones sed. Hinc offendit moderatius at has, sed quidam tractatos ea, ei mel tale latine efficiantur! Has ea civibus omittam, eu his posse sadipscing. Solum legendos eleifend id vis? Has agam quidam et, lorem antiopam vel ea!
+        Persius labores conclusionemque at eos, ne laudem possit iudicabit mel? Eum erat abhorreant accommodare an, lorem etiam mel ne! Mel munere iracundia signiferumque eu, an nullam tritani oblique pri. Illud solet te vis, ei autem eligendi moderatius nec, est ut nonumes legendos?</dd>
+        <dt style="margin-top: 1%">
+        <span><a style="padding: 1rem;text-decoration: none;" [routerLink]="['/AgentAmbassadorComponent']">Saccos</a></span>
+        <span><a style="padding: 1rem;text-decoration: none" [routerLink]="['/AgentAmbassadorComponent']">Banks</a></span>
+        <span><a style="padding: 1rem;text-decoration: none" [routerLink]="['/AgentAmbassadorComponent']">Individuals</a></span>
+        <span><a style="padding: 1rem;text-decoration: none" [routerLink]="['/AgentAmbassadorComponent']">Investment Firms</a></span>
+        </dt>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div style="margin-top: 1%">
+        <div class="mat-elevation-z8">
+        <mat-form-field style="width: 100%">
+          <mat-label>Search for your fovourite Sacco</mat-label>
+          <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Baraka Tele Sacco">
+        </mat-form-field>
+        <table mat-table [dataSource]="dataSource" matSort style="width: 100%">
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+            <td mat-cell *matCellDef="let partners"> {{partners.name}} </td>
+          </ng-container>
+
+          <!-- Charge Column -->
+          <ng-container matColumnDef="charge">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Charge </th>
+            <td mat-cell *matCellDef="let partners"> {{partners.charge}}%</td>
+          </ng-container>
+
+          <!-- Time Column -->
+          <ng-container matColumnDef="time">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Time </th>
+            <td mat-cell *matCellDef="let partners"> {{partners.time}} {{partners.timeunit}} </td>
+          </ng-container>
+          <!-- URL Column -->
+
+          <ng-container matColumnDef="selected">
+            <th mat-header-cell *matHeaderCellDef> Select </th>
+            <td mat-cell *matCellDef="let partners">
+              <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;" class="linkClassNoCaps">
+              {{partners.selected}}
+              </a>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+         <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+        </div>
+
+        </div>
+      </section>
+    </section>
+  </section>
+
+<section class="individualfooterGrid">
+
+    <div class="footerBottomIndividual">
+    <div class="bottomServiceRow positionSticky">
+    <div class="footerbottom">
+    <div class="secondfooterflex">
+      <h3 class="testClass"><span class="footerLinks">+</span>
+        <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none" class="footerLinks">About Company</a>
+      </h3>
+      <h3 class="testClass"><span class="footerLinks">+</span>
+        <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none" class="footerLinks">Investment requested</a>
+      </h3>
+    </div>
+    </div>
+
+    <div class="pledgeBottom">
+    <div class="secondfooterflex">
+      <h3 class="testClass">
+        <span class="footerLinks">+</span>
+        <a [routerLink]="['/PledgeComponent']" style="text-decoration: none" class="footerLinks">Deals published</a>
+      </h3>
+      <h3 class="testClass">
+        <span class="footerLinks">+</span><a [routerLink]="['/StatisticsComponent']" style="text-decoration: none" class="footerLinks">Partners requested</a>
+      </h3>
+    </div>
+    </div>
+
+    <div class="dealsBottom footerLogo">
+    <div class="imgd">
+    </div>
+    </div>
+
+    <div class="dealsBottom">
+    <div class="secondfooterflex">
+      <h3 class="testClass">
+      <span class="footerLinks">+</span><a [routerLink]="['/BusinessDealsComponent']" style="text-decoration: none"
+      class="footerLinks">Investment stats</a>
+      </h3>
+      <h3 class="testClass"><span class="footerLinks">+</span>
+        <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none" class="footerLinks">Deals closed
+      </a>
+    </h3>
+    </div>
+    </div>
+    <div class="footerbottom">
+    <div class="secondfooterflex">
+      <h3 class="testClass"><span class="footerLinks">+</span>
+        <a [routerLink]="['/JobsComponent']" style="text-decoration: none">Company docs</a></h3>
+      <h3 class="testClass"><span class="footerLinks">+</span>
+        <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none" class="footerLinks">Jobs applied</a></h3>
+    </div>
+    </div>
+    </div>
+    </div>
+
+</section>
+
+</body>

@@ -1,0 +1,156 @@
+
+<body>
+<div class="content">
+<section>
+<header>
+ <div>Welcome to Mzynga<hr class="line"></div>
+</header>
+</section>
+<section>
+	<img src="assets/letter.svg" style="height:150px;width: 250px">
+</section>
+<section>
+	<form [formGroup]="companyWorkInfo" (ngSubmit)="onSubmit()">
+	<table class="tableClass">
+	<tr>
+	<th colspan="2">
+	<h4> Company Work Information</h4>
+	</th>
+	</tr>
+
+	<tr>
+	<td colspan="2">
+	<mat-radio-group aria-label="Does your company hold any patents.....?" formControlName="patents">
+	<mat-label>Does company name hold any patents ? </mat-label><br><br>
+  	<mat-radio-button value="yes">YES</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;
+  	<mat-radio-button value="no">NO</mat-radio-button>
+	</mat-radio-group>
+	</td>
+	</tr>
+
+
+
+	<tr>
+	<td colspan="2">
+	<app-upload-page></app-upload-page>
+	</td>
+	</tr>
+	<br>
+	<br>
+
+	<tr>
+	<td>
+	<mat-expansion-panel>
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+        Enter working days
+    </mat-panel-title>
+    <mat-panel-description>
+        Enter the start and end days of your week.
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+    <mat-label>First day of the week</mat-label>
+    <mat-select [(value)]="selected" formControlName="startDay">
+    <mat-option value="monday">Monday</mat-option>
+    <mat-option value="tuesday">Tuesday</mat-option>
+    <mat-option value="wednesday">Wednesday</mat-option>
+    <mat-option value="thursday">Thursday</mat-option>
+    <mat-option value="friday">Friday</mat-option>
+    <mat-option value="saturday">Saturday</mat-option>
+    <mat-option value="sunday">Sunday</mat-option>
+  	</mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+    <mat-label>Last day of the week</mat-label>
+    <mat-select [(value)]="selected" formControlName="endDay">
+    <mat-option value="monday">Monday</mat-option>
+    <mat-option value="tuesday">Tuesday</mat-option>
+    <mat-option value="wednesday">Wednesday</mat-option>
+    <mat-option value="thursday">Thursday</mat-option>
+    <mat-option value="friday">Friday</mat-option>
+    <mat-option value="saturday">Saturday</mat-option>
+    <mat-option value="sunday">Sunday</mat-option>
+  	</mat-select>
+    </mat-form-field>
+  	</mat-expansion-panel>
+  	</td>
+	</tr>
+
+	<br>
+	<br>
+	<tr>
+	<td>
+	<mat-expansion-panel>
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+        Enter working hours
+    </mat-panel-title>
+    <mat-panel-description>
+        Enter the start and end time for your office hours
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+	<mat-form-field>
+    <mat-label>Start time of the Day</mat-label>
+    <mat-select [(value)]="selected" formControlName="startHour">
+    <mat-option value="5am">5 A.M</mat-option>
+    <mat-option value="6am">6 A.M</mat-option>
+    <mat-option value="7am">7 A.M</mat-option>
+    <mat-option value="8am">8 A.M</mat-option>
+    <mat-option value="9am">9 A.M</mat-option>
+    <mat-option value="10am">10 A.M</mat-option>
+    <mat-option value="11am">11 A.M</mat-option>
+    <mat-option value="12am">12 Noon</mat-option>
+  	</mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+    <mat-label>End time of the Day</mat-label>
+    <mat-select [(value)]="selected" formControlName="endHour">
+    <mat-option value="1pm">1 P.M</mat-option>
+    <mat-option value="2pm">2 P.M</mat-option>
+    <mat-option value="3pm">3 P.M</mat-option>
+    <mat-option value="4pm">4 P.M</mat-option>
+    <mat-option value="5pm">5 P.M</mat-option>
+    <mat-option value="6pm">6 P.M</mat-option>
+    <mat-option value="7pm">7 P.M</mat-option>
+    <mat-option value="8pm">8 P.M</mat-option>
+  	</mat-select>
+    </mat-form-field>
+  	</mat-expansion-panel>
+  	</td>
+	</tr>
+	<br>
+	<br>
+	<tr>
+	<td colspan="2">
+	<mat-radio-group aria-label="Does your company hold any patents.....?" formControlName="companyProducts">
+	<mat-label>What does your company deal with ? </mat-label><br><br>
+  	<mat-radio-button value="services">Services</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;
+  	<mat-radio-button value="products">Products</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;
+  	<mat-radio-button value="products&Services">Both Services and Products</mat-radio-button>
+	</mat-radio-group>
+	</td>
+	</tr>
+	<br>
+	<tr>
+	<td class="content-center" colspan="2">
+	<p style="margin-left: 35%;margin-right: 35%">
+	<button mat-raised-button color="basic" type="submit">Next - Product Info
+	</button>
+	</p>
+	</td>
+	</tr>
+
+	</table>
+	</form>
+
+</section>
+</div>
+<!--<footer class="footer">
+<img ng-src="assets/footer.svg" src="/assets/footer.svg">
+</footer>-->
+</body>
+

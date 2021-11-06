@@ -1,0 +1,1166 @@
+
+<main class="pageLayout">
+<section class="body">
+<section class="menu-section-left" [ngClass]="status ? 'open' : 'close'">
+<button class="menuCloseBtn" (click)="status=!status">
+  <img src="../../assets/close-icon.svg">
+</button>
+
+
+      <section class="logo-section">
+        <div class="logo-img">
+          <a [routerLink]="['/LandingPageComponent']">
+          <img src="assets/footerDope.svg" alt="Mzynga Technology" style="height:200px;width:200px">
+          </a>
+        </div>
+        <div class="notify">
+        <div class="notSection"
+        ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item><span class="urlfront">+ Investment process</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/InvestmentPageComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Inv. chances (113,467)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ List partnerships</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/PledgeComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ P.ship chances (12,467)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item><span class="urlfront">+ List deals</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/BusinessDealsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Deal chances(83,467)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/JobsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Job (19,13,467)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/LandingPageComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Help</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+        </div>
+      </section>
+
+
+</section>
+<section class="menu-section-centre">
+<!--THIS IS THE FIRST SECTION-->
+<section class="searchsort-element">
+<div class="searchSection positionSticky">
+<div class="headerTop" style="width: 100%">
+	<div class="menuBtn">
+<button type="button" class="btn" (click)="status=!status" >
+<img src="../../assets/home-24px.svg"/>
+</button>
+	</div>
+	<mat-form-field [floatLabel]="Mzynga" class="searchInput">
+		<mat-label>Search for Jobs , deals , pledges and investments</mat-label>
+		<input matInput placeholder="Enter name to search">
+	</mat-form-field>
+	<button mat-stroked-button class="searchbutton"><span class="linkClass">Search</span></button>
+	<section class="accountSection">
+		<div class="accountSectionFlex">
+			<h2>
+				<span class="amountClass">240k</span> invested
+				<button mat-stroked-button class="menuBttn" [routerLink]="['/login']">
+					<span class="amountClass">Log In </span>
+				</button>
+			</h2>
+		</div>
+	</section>
+</div>
+</div>
+
+<h2 class="intro">
+We are a peer to peer business platform,we
+provide an easy legal process for companies and individuals to post
+<span class="underline">business deals</span> , <span class="underline">seek
+	partnerships</span> , <span class="underline">hire talent</span> and <span class="underline">seek
+	investments</span>.
+</h2>
+<div class="introductionElement positionSticky">
+<section class="menuClass">
+	<div class="menuImage">
+		<img src="assets/funding.svg" style="height: 150px;width: 150px">
+	</div>
+	<div class="menuContent">
+		<h2 class="ibmplexmono"><span class="underline">113,467</span><span>
+			<img src="assets/market.svg"></span>
+		</h2>
+		<h3 class="rufinaserif">Investment deals</h3>
+		<h2 class="ibmplexmono">
+			<button mat-stroked-button class="menuBttn" [routerLink]="['/InvestmentPageComponent']">
+				<span class="linkClass">See all
+				</span>
+			</button>
+		</h2>
+	</div>
+</section>
+<section class="menuClass">
+	<div class="menuImage">
+		<img src="assets/pledge.svg" style="height: 150px;width: 150px">
+	</div>
+	<div class="menuContent">
+		<h2 class="ibmplexmono"><span class="underline">11,467</span><span><img
+					src="assets/market.svg"></span></h2>
+		<h3 class="rufinaserif">Partnerships</h3>
+		<h2 class="ibmplexmono">
+			<button mat-stroked-button class="menuBttn" [routerLink]="['/PledgeComponent']">
+				<span class="linkClass">See all
+				</span>
+			</button>
+		</h2>
+	</div>
+</section>
+
+<section class="menuClass">
+	<div class="menuImage">
+		<img src="assets/deals.svg" style="height: 150px;width: 150px">
+	</div>
+	<div class="menuContent">
+		<h2 class="ibmplexmono"><span class="underline">83,467</span><span><img
+					src="assets/market.svg"></span></h2>
+		<h3 class="rufinaserif">Business deals</h3>
+		<h2 class="ibmplexmono">
+			<button mat-stroked-button class="menuBttn" [routerLink]="['/BusinessDealsComponent']">
+				<span class="linkClass">See all
+				</span>
+			</button>
+		</h2>
+	</div>
+</section>
+
+<section class="menuClass">
+	<div class="menuImage">
+		<img src="assets/job.svg" style="height: 150px;width: 150px">
+	</div>
+	<div class="menuContent">
+		<h2 class="ibmplexmono"><span class="underline">9,873,467</span><span><img
+					src="assets/market.svg"></span></h2>
+		<h3 class="rufinaserif">Job opportunities</h3>
+		<h2 class="ibmplexmono">
+			<button mat-stroked-button class="menuBttn" [routerLink]="['/JobsComponent']">
+				<span class="linkClass">See all
+				</span>
+			</button>
+		</h2>
+	</div>
+</section>
+
+</div>
+
+<div class="notification-Element">
+
+<div class="upper-notification">
+
+	<div class="upper-notification1">
+		<div class="flex-nav">
+			<div class="flex-nav-right">
+				<h2 class="smallIntroCB"><span class="underlineBlack">INVESTMENT OPPORTUNITIES</span></h2>
+			</div>
+			<div class="flex-nav-left">
+				<h2 class="smallIntroNoCB"><span class="underline">113,467</span><span><img
+							src="assets/market.svg"></span> <span class="opportunitiesText">more opportunities.........</span><span><button
+							mat-stroked-button class="searchbutton"><span class="linkClass"
+								[routerLink]="['/InvestmentPageComponent']">See
+								more</span></button></span></h2>
+			</div>
+		</div>
+		<div class="flex-container">
+
+			<mat-card class="flex-video">
+			<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+			 style="height: 250px;width: 350px">
+			<mat-card-content>
+					<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+					</p>
+					<p>
+					<span class="valuationTitle">Current Valuation :-
+					<span class="underline">USD$ 5,000,000</span>
+					</span>
+					<br>
+					<span class="daysNotification">Posted 2 days ago</span>
+					</p>
+					<div class="notificationSection">
+					<span class="iconsRight">
+					<i class="material-icons">payment</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">people_outline</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+					</div>
+				</mat-card-content>
+				<mat-card-actions>
+					<button mat-button class="linkClass" [routerLink]="['/IndividualPartnershipComponent']">
+          + See Investment</button>
+					<button mat-button class="linkClass">+ Add to Watchlist</button>
+				</mat-card-actions>
+			</mat-card>
+
+			<mat-card class="flex-video">
+			<img mat-card-image src='../../assets/Jogoo.jpg' alt="Brookside logo"
+			 style="height: 250px;width: 350px">
+			<mat-card-content>
+			<p>Unga group a leading provider of flour in the East Africa region is seeking investors.
+			</p>
+			<p>
+			<span class="valuationTitle">Current Valuation :-
+			<span class="underline">USD$ 4,000,000</span>
+			</span>
+			<br>
+			<span class="daysNotification">Posted 12 days ago</span>
+			</p>
+			<div class="notificationSection">
+			<span class="iconsRight">
+			<i class="material-icons">payment</i>
+			<span class="addToWatchlist">50</span>
+			</span>
+			<span class="iconsLeft">
+			<i class="material-icons">people_outline</i>
+			<span class="addToWatchlist">80</span>
+			</span>
+			</div>
+			</mat-card-content>
+			<mat-card-actions>
+			<button mat-button class="linkClass" [routerLink]="['/IndividualPartnershipComponent']">
+      + See Investment</button>
+			<button mat-button class="linkClass">+ Add to Watchlist</button>
+			</mat-card-actions>
+			</mat-card>
+
+			<mat-card class="flex-video">
+			<img mat-card-image src='../../assets/Jogoo.jpg' alt="Brookside logo"
+			 style="height: 250px;width: 350px">
+			<mat-card-content>
+			<p>Unga group a leading provider of flour in the East Africa region is seeking investors.
+			</p>
+			<p>
+			<span class="valuationTitle">Current Valuation :-
+			<span class="underline">USD$ 4,000,000</span>
+			</span>
+			<br>
+			<span class="daysNotification">Posted 12 days ago</span>
+			</p>
+			<div class="notificationSection">
+			<span class="iconsRight">
+			<i class="material-icons">payment</i>
+			<span class="addToWatchlist">50</span>
+			</span>
+			<span class="iconsLeft">
+			<i class="material-icons">people_outline</i>
+			<span class="addToWatchlist">80</span>
+			</span>
+			</div>
+			</mat-card-content>
+			<mat-card-actions>
+			<button mat-button class="linkClass" [routerLink]="['/IndividualPartnershipComponent']">
+      + See Investment</button>
+			<button mat-button class="linkClass">+ Add to Watchlist</button>
+			</mat-card-actions>
+			</mat-card>
+
+			<mat-card class="flex-video">
+			<img mat-card-image src='../../assets/brookside.jpg' alt="Brookside logo"
+			 style="height: 250px;width: 350px">
+			<mat-card-content>
+					<p>Brookside dairies a leading dairy in East African regions is seeking qualified investors.
+					</p>
+					<p>
+					<span class="valuationTitle">Current Valuation :-
+					<span class="underline">USD$ 5,000,000</span>
+					</span>
+					<br>
+					<span class="daysNotification">Posted 2 days ago</span>
+					</p>
+					<div class="notificationSection">
+					<span class="iconsRight">
+					<i class="material-icons">payment</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">people_outline</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+					</div>
+				</mat-card-content>
+				<mat-card-actions>
+					<button mat-button class="linkClass" [routerLink]="['/IndividualPartnershipComponent']">
+          + See Investment</button>
+					<button mat-button class="linkClass">+ Add to Watchlist</button>
+				</mat-card-actions>
+			</mat-card>
+		</div>
+	</div>
+
+	<div class="middle-uppernotification">
+		<div class="flex-nav">
+			<div class="flex-nav-right">
+				<h2 class="smallIntroCB"><span class="underlineBlack">PARTNERSHIP OPPORTUNITIES</span>
+				</h2>
+			</div>
+			<div class="flex-nav-left">
+				<h2 class="smallIntroNoCB"><span class="underline">113,467</span>
+              <span><img
+							src="assets/market.svg"></span>
+              <span class="opportunitiesText">more opportunities.........</span>
+              <span>
+              <button mat-stroked-button class="searchbutton" [routerLink]="['/PledgeComponent']">
+              <span class="linkClass">See more</span>
+              </button>
+              </span>
+        </h2>
+			</div>
+		</div>
+		<div class="flex-container">
+			<div class="flex-video">
+				<mat-card>
+					<mat-card-header>
+						<div mat-card-avatar class="profilePic"></div>
+						<mat-card-title class="campaignTitle">FERRIS AIR</mat-card-title>
+						<mat-card-subtitle class="campaignTitle">AVIATION INDUSTRY
+						</mat-card-subtitle>
+					</mat-card-header>
+					<mat-card-content>
+					<div class="poster1">
+					<img src="assets/samplelogo1.png" style="height: 100px;width: 100px">
+					</div>
+					<p>Ferris air is looking for a partners in the development of new routes in East the African trade hub.<br>
+					<span class="daysNotification">Posted 2 days ago</span>
+					</p>
+					<p>
+					<button mat-button class="linkClass">Learn more</button>
+					</p>
+					<div class="notificationSection">
+					<span class="iconsRight">
+					<i class="material-icons">lock</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">pageview</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+					</div>
+
+					</mat-card-content>
+
+					<mat-card-actions>
+						<button mat-button class="linkClass" [routerLink]="['/IndividualPartnershipComponent']">
+            + Partner</button>
+						<button mat-button class="linkClass">+ Save</button>
+					</mat-card-actions>
+				</mat-card>
+			</div>
+
+			<div class="flex-video">
+				<mat-card>
+					<mat-card-header>
+						<div mat-card-avatar class="profilePic"></div>
+						<mat-card-title class="campaignTitle">FERRIS AIR</mat-card-title>
+						<mat-card-subtitle class="campaignTitle">AVIATION INDUSTRY
+						</mat-card-subtitle>
+					</mat-card-header>
+					<mat-card-content>
+					<div class="poster1">
+					<img src="assets/samplelogo1.png" style="height: 100px;width: 100px">
+					</div>
+					<p>Ferris air is looking for a partners in the development of new routes in East the African trade hub.<br>
+					<span class="daysNotification">Posted 2 days ago</span>
+					</p>
+					<p>
+					<button mat-button class="linkClass">Learn more</button>
+					</p>
+					<div class="notificationSection">
+					<span class="iconsRight">
+					<i class="material-icons">lock</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">pageview</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+					</div>
+
+					</mat-card-content>
+
+					<mat-card-actions>
+						<button mat-button class="linkClass" [routerLink]="['/IndividualPartnershipComponent']">
+            + Partner</button>
+						<button mat-button class="linkClass">+ Save</button>
+					</mat-card-actions>
+				</mat-card>
+			</div>
+
+			<div class="flex-video">
+				<mat-card>
+					<mat-card-header>
+						<div mat-card-avatar class="profilePic"></div>
+						<mat-card-title class="campaignTitle">FERRIS AIR</mat-card-title>
+						<mat-card-subtitle class="campaignTitle">AVIATION INDUSTRY
+						</mat-card-subtitle>
+					</mat-card-header>
+					<mat-card-content>
+					<div class="poster1">
+					<img src="assets/samplelogo1.png" style="height: 100px;width: 100px">
+					</div>
+					<p>Ferris air is looking for a partners in the development of new routes in East the African trade hub.<br>
+					<span class="daysNotification">Posted 2 days ago</span>
+					</p>
+					<p>
+					<button mat-button class="linkClass">Learn more</button>
+					</p>
+					<div class="notificationSection">
+					<span class="iconsRight">
+					<i class="material-icons">lock</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">pageview</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+					</div>
+
+					</mat-card-content>
+
+					<mat-card-actions>
+						<button mat-button class="linkClass" [routerLink]="['/IndividualPartnershipComponent']">
+            + Partner</button>
+						<button mat-button class="linkClass">+ Save</button>
+					</mat-card-actions>
+				</mat-card>
+			</div>
+
+			<div class="flex-video">
+
+				<mat-card>
+					<mat-card-header>
+						<div mat-card-avatar class="profilePic"></div>
+						<mat-card-title class="campaignTitle">FERRIS AIR</mat-card-title>
+						<mat-card-subtitle class="campaignTitle">AVIATION INDUSTRY
+						</mat-card-subtitle>
+					</mat-card-header>
+					<mat-card-content>
+					<div class="poster1">
+					<img src="assets/samplelogo1.png" style="height: 100px;width: 100px">
+					</div>
+					<p>Ferris air is looking for a partners in the development of new routes in East the African trade hub.<br>
+					<span class="daysNotification">Posted 2 days ago</span>
+					</p>
+					<p>
+					<button mat-button class="linkClass">Learn more</button>
+					</p>
+					<div class="notificationSection">
+					<span class="iconsRight">
+					<i class="material-icons">lock</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">pageview</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+					</div>
+
+					</mat-card-content>
+
+					<mat-card-actions>
+						<button mat-button class="linkClass" [routerLink]="['/IndividualPartnershipComponent']">
+            + Partner</button>
+						<button mat-button class="linkClass">+ Save</button>
+					</mat-card-actions>
+				</mat-card>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="middle-lowernotification">
+		<div class="flex-nav">
+			<div class="flex-nav-right">
+				<h2 class="smallIntroCB"><span class="underlineBlack">BUSINESS &nbsp;</span><span class="underlineBlack disBlockSM">DEALS</span> <span class="underlineBlack">&nbsp; OPPORTUNITIES</span></h2>
+			</div>
+			<div class="flex-nav-left">
+				<h2 class="smallIntroNoCB"><span class="underline">113,467</span><span><img
+							src="assets/market.svg"></span> <span class="opportunitiesText">more opportunities.........</span><span><button
+							mat-stroked-button class="searchbutton"><span class="linkClass"
+								[routerLink]="['/InvestmentPageComponent']">See
+								more</span></button></span></h2>
+			</div>
+		</div>
+		<div class="flex-container">
+
+			<div class="flex-video">
+
+				<mat-card>
+					<mat-card-header>
+						<div mat-card-avatar class="profilePic"></div>
+						<mat-card-title class="campaignTitle">FERRIS AIR</mat-card-title>
+						<mat-card-subtitle class="campaignTitle">AVIATION INDUSTRY
+						</mat-card-subtitle>
+					</mat-card-header>
+
+					<mat-card-content>
+					<div class="poster">
+					<img src="assets/KenyattaUni.png" style="height: 100px;width: 100px">
+					</div>
+					<p>Ferris air is looking for a partners in the development of new routes in East the African trade hub.<br>
+					<span class="daysNotification">Posted 2 days ago</span>
+					</p>
+					<p>
+					<button mat-button class="linkClass">Learn more</button>
+					</p>
+					<div class="notificationSection">
+					<span class="iconsRight">
+					<i class="material-icons">message</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">visibility</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+					</div>
+
+					</mat-card-content>
+
+					<mat-card-actions>
+						<button mat-button class="linkClass" [routerLink]="['/IndividualPartnershipComponent']">
+            + CLOSE DEAL</button>
+						<button mat-button class="linkClass">+ ADD TO WATCHLIST</button>
+					</mat-card-actions>
+				</mat-card>
+
+			</div>
+
+			<div class="flex-video">
+
+				<mat-card>
+					<mat-card-header>
+						<div mat-card-avatar class="profilePic"></div>
+						<mat-card-title class="campaignTitle">FERRIS AIR</mat-card-title>
+						<mat-card-subtitle class="campaignTitle">AVIATION INDUSTRY
+						</mat-card-subtitle>
+					</mat-card-header>
+
+					<mat-card-content>
+					<div class="poster">
+					<img src="assets/KenyattaUni.png" style="height: 100px;width: 100px">
+					</div>
+					<p>Ferris air is looking for a partners in the development of new routes in East the African trade hub.<br>
+					<span class="daysNotification">Posted 2 days ago</span>
+					</p>
+					<p>
+					<button mat-button class="linkClass">Learn more</button>
+					</p>
+					<div class="notificationSection">
+					<span class="iconsRight">
+					<i class="material-icons">message</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">visibility</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+					</div>
+
+					</mat-card-content>
+
+					<mat-card-actions>
+						<button mat-button class="linkClass" [routerLink]="['/IndividualPartnershipComponent']">
+            + CLOSE DEAL</button>
+						<button mat-button class="linkClass">+ ADD TO WATCHLIST</button>
+					</mat-card-actions>
+				</mat-card>
+
+			</div>
+
+			<div class="flex-video">
+
+					<mat-card>
+					<mat-card-header>
+						<div mat-card-avatar class="profilePic"></div>
+						<mat-card-title class="campaignTitle">FERRIS AIR</mat-card-title>
+						<mat-card-subtitle class="campaignTitle">AVIATION INDUSTRY
+						</mat-card-subtitle>
+					</mat-card-header>
+
+					<mat-card-content>
+					<div class="poster">
+					<img src="assets/KenyattaUni.png" style="height: 100px;width: 100px">
+					</div>
+					<p>Ferris air is looking for a partners in the development of new routes in East the African trade hub.<br>
+					<span class="daysNotification">Posted 2 days ago</span>
+					</p>
+					<p>
+					<button mat-button class="linkClass">Learn more</button>
+					</p>
+					<div class="notificationSection">
+					<span class="iconsRight">
+					<i class="material-icons">message</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">visibility</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+					</div>
+
+					</mat-card-content>
+
+					<mat-card-actions>
+						<button mat-button class="linkClass" [routerLink]="['/IndividualPartnershipComponent']">
+            + CLOSE DEAL</button>
+						<button mat-button class="linkClass">+ ADD TO WATCHLIST</button>
+					</mat-card-actions>
+				</mat-card>
+
+			</div>
+
+			<div class="flex-video">
+
+				<mat-card>
+					<mat-card-header>
+						<div mat-card-avatar class="profilePic"></div>
+						<mat-card-title class="campaignTitle">FERRIS AIR</mat-card-title>
+						<mat-card-subtitle class="campaignTitle">AVIATION INDUSTRY
+						</mat-card-subtitle>
+					</mat-card-header>
+
+					<mat-card-content>
+					<div class="poster">
+					<img src="assets/KenyattaUni.png" style="height: 100px;width: 100px">
+					</div>
+					<p>Ferris air is looking for a partners in the development of new routes in East the African trade hub.<br>
+					<span class="daysNotification">Posted 2 days ago</span>
+					</p>
+					<p>
+					<button mat-button class="linkClass">Learn more</button>
+					</p>
+					<div class="notificationSection">
+					<span class="iconsRight">
+					<i class="material-icons">message</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">visibility</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+					</div>
+
+					</mat-card-content>
+
+					<mat-card-actions>
+						<button mat-button class="linkClass" [routerLink]="['/IndividualPartnershipComponent']">
+            + CLOSE DEAL</button>
+						<button mat-button class="linkClass">+ ADD TO WATCHLIST</button>
+					</mat-card-actions>
+				</mat-card>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="lower-notification">
+		<div class="flex-nav">
+			<div class="flex-nav-right">
+				<h2 class="smallIntroCB"><span class="underlineBlack disBlockSM">JOBS</span><span class="underlineBlack">&nbsp; OPPORTUNITIES</span></h2>
+			</div>
+
+			<div class="flex-nav-left">
+				<h2 class="smallIntroNoCB"><span class="underline">113,467</span><span><img
+							src="assets/market.svg"></span> <span class="opportunitiesText">more opportunities.........</span><span>
+						<button mat-stroked-button class="searchbutton" [routerLink]="['/JobsComponent']"><span class="linkClass">See
+								more</span></button></span>
+				</h2>
+			</div>
+
+		</div>
+		<div class="flex-container">
+			<div class="flex-video">
+				<!--Hii ni ya upgrade-->
+				<mat-card class="cardGrid">
+					<div class="profileJob"></div>
+
+					<div class="bodySection">
+
+					<div class="titleSectionJobs">
+					<p class="jobPosting">Content Development .....</p><br>
+					<p>
+					<span class="companyPosting">Mzynga Technology Ltd</span>
+					<br>
+					<span class="rufinaserif">Nairobi,Kenya</span>
+					</p>
+					</div>
+
+					<div class="timeSection">
+					<p class="timeJob">
+					<i class="material-icons">timer</i> 15 hrs left
+					</p>
+					</div>
+
+					<div class="notificationSection">
+					<span class="iconsRight">
+					<i class="material-icons">work</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">watch_later</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+					</div>
+
+					<p class="addToWatchlist">+ Add Reminder</p>
+					</div>
+
+					<div class="footerPartL">
+						<span class="amountClass" [routerLink]="['/IndividualPartnershipComponent']">
+            Apply</span>
+					</div>
+				</mat-card>
+			</div>
+			<div class="flex-video">
+				<mat-card class="cardGrid">
+					<div class="profileJob"></div>
+
+					<div class="bodySection">
+
+					<div class="titleSectionJobs">
+					<p class="jobPosting">Chief Technology Officer</p><br>
+					<p>
+					<span class="companyPosting">Mzynga Technology Ltd</span>
+					<br>
+					<span class="rufinaserif">Nairobi,Kenya</span>
+					</p>
+					</div>
+
+					<div class="timeSection">
+					<p class="timeJob">
+					<i class="material-icons">timer</i> 15 hrs left
+					</p>
+					</div>
+
+					<div class="notificationSection">
+
+					<span class="iconsRight">
+					<i class="material-icons">work</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">watch_later</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+
+					</div>
+					<p class="addToWatchlist">+ Add Reminder</p>
+					</div>
+
+					<div class="footerPartL">
+						<span class="amountClass" [routerLink]="['/IndividualPartnershipComponent']">
+            Apply</span>
+					</div>
+				</mat-card>
+			</div>
+
+			<div class="flex-video">
+				<mat-card class="cardGrid">
+					<div class="profileJob"></div>
+
+					<div class="bodySection">
+
+					<div class="titleSectionJobs">
+					<p class="jobPosting">Database Administrator</p>
+					<p>
+					<span class="companyPosting">Mzynga Technology Ltd</span>
+					<br>
+					<span class="rufinaserif">Nairobi,Kenya</span>
+					</p>
+					</div>
+
+					<div class="timeSection">
+					<p class="timeJob">
+					<i class="material-icons">timer</i> 16 days left
+					</p>
+					</div>
+
+					<div class="notificationSection">
+
+					<span class="iconsRight">
+					<i class="material-icons">work</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">watch_later</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+
+					</div>
+					<p class="addToWatchlist">+ Add Reminder</p>
+					</div>
+
+
+					<div class="footerPartL">
+						<span class="amountClass" [routerLink]="['/IndividualPartnershipComponent']">
+            Apply</span>
+					</div>
+				</mat-card>
+			</div>
+
+			<div class="flex-video">
+				<mat-card class="cardGrid">
+					<div class="profileJob"></div>
+
+
+					<div class="bodySection">
+
+					<div class="titleSectionJobs">
+					<p class="jobPosting">Customer Support Agent</p><br>
+					<p>
+					<span class="companyPosting">Mzynga Technology Ltd</span>
+					<br>
+					<span class="rufinaserif">Nairobi,Kenya</span>
+					</p>
+					</div>
+
+					<div class="timeSection">
+					<p class="timeJob">
+					<i class="material-icons">timer</i> 16 days left
+					</p>
+					</div>
+
+					<div class="notificationSection">
+
+					<span class="iconsRight">
+					<i class="material-icons">work</i>
+					<span class="addToWatchlist">400</span>
+					</span>
+
+					<span class="iconsLeft">
+					<i class="material-icons">watch_later</i>
+					<span class="addToWatchlist">500</span>
+					</span>
+
+					</div>
+					<p class="addToWatchlist">+ Add Reminder</p>
+					</div>
+
+
+					<div class="footerPartL">
+						<span class="amountClass" [routerLink]="['/IndividualPartnershipComponent']">
+            Apply</span>
+					</div>
+				</mat-card>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+
+</section>
+
+
+<section class="menu-section-right">
+
+
+<section class="monthSection">
+<section>
+<div class="arrow-down"></div>
+</section>
+<section>
+<h3 class="linkClass">October</h3>
+</section>
+<section>
+<div class="arrow-up"></div>
+</section>
+</section>
+<section class="dateSection">
+<div class="preview">
+<div class="arrow-right"></div>
+<div>
+	<p class="alegreyaserif">PREV </p>
+</div>
+
+</div>
+<div class="first">
+<div class="firstInner">
+	<h2 class="badge1" data-badge="27">11</h2>
+</div>
+</div>
+<div class="first">
+<div class="firstInner">
+	<h2 class="badge1" data-badge="19">12</h2>
+</div>
+</div>
+
+<div class="first">
+<div class="firstInner">
+	<h2 class="badge1" data-badge="2K">13</h2>
+</div>
+</div>
+<div class="first">
+<div class="firstInner">
+	<h2 class="badge1" data-badge="200">14</h2>
+</div>
+</div>
+<div class="first">
+<div class="firstInner">
+	<h2 class="badge1" data-badge="2.5K">15</h2>
+</div>
+</div>
+<div class="first">
+<div class="firstInner">
+	<h2 class="badge1" data-badge="104">16</h2>
+</div>
+</div>
+<div class="first">
+<div class="firstInner">
+	<h2 class="badge1" data-badge="3">17</h2>
+</div>
+</div>
+<div class="first">
+<div class="firstInner">
+	<h2 class="badge1" data-badge="67">18</h2>
+</div>
+</div>
+<div class="first">
+<div class="firstInner">
+	<h2 class="badge1" data-badge="23K">19</h2>
+</div>
+</div>
+<div class="first">
+<div class="firstInner">
+	<h2 class="badge1" data-badge="287">20</h2>
+</div>
+</div>
+<div class="next">
+<div>
+	<p class="alegreyaserif">NEXT </p>
+</div>
+<div class="arrow-left"></div>
+</div>
+<div class="next">
+<div>
+	<p class="alegreyaserif">HIDE </p>
+</div>
+<div class="arrow-left"></div>
+</div>
+</section>
+
+
+</section>
+</section>
+
+
+<section class="footer">
+
+
+
+
+<div  class="footerContentRow">
+
+
+<section class="footergridcontainer">
+
+<div class="footergrid">
+<h3 class="footerHeader3"><span style="border-bottom: 1.5px solid #222;">To Request Investment</span></h3>
+<p class="footerParagraph">
+  <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+  Introduce your brand
+  </a> <br>
+  <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+  State investment needs</a> <br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none;"> Recieve applications</a><br>
+   <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Review applications</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Select ideal Investors</a>
+</p>
+<h3 class="footerHeader3"><span style="border-bottom: 1.5px solid #222;">To Recieve Investment</span></h3>
+<p class="footerParagraph">
+  <a [routerLink]="['/AgentAmbassadorComponent']" style="text-decoration: none">Choose ambassador</a><br>
+  <a [routerLink]="['/AgentAmbassadorComponent']" style="text-decoration: none">Signatories sign</a><br>
+  <a [routerLink]="['/StatisticsComponent']"      style="text-decoration: none">Complete investment</a>
+</p>
+</div>
+
+</section>
+
+<section class="footergridcontainer">
+<div class="footerPledgeDeals">
+<h3 class="footerHeader3"><span style="border-bottom: 1.5px solid #222;">To Request Partnerships</span></h3>
+<p class="footerParagraph">
+  <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none">Introduce your request</a><br>
+  <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none">State terms and conditions</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Start recieving applications</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Review applications</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Select ideal Partners</a>
+</p>
+<h3 class="footerHeader3"><span style="border-bottom: 1.5px solid #222;">To get Partner</span></h3>
+<p class="footerParagraph">
+  <a [routerLink]="['/IndividualPartnershipComponent']" style="text-decoration: none">Review terms and conditions</a><br>
+  <a [routerLink]="['/IndividualPartnershipComponent']" style="text-decoration: none">Apply for partnership</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Sign a partnership deal</a>
+</p>
+</div>
+
+
+</section>
+
+
+
+<section class="footergridcontainer">
+<div class="footerPledgeDeals">
+<h3 class="footerHeader3"><span style="border-bottom: 1.5px solid #222;">To Request a Deal</span></h3>
+<p class="footerParagraph">
+  <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none">List your deal</a><br>
+  <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none">State ideal deal maker</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Start recieving applications</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Review applications</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Select ideal and close Deal</a>
+</p>
+<h3 class="footerHeader3"><span style="border-bottom: 1.5px solid #222;">To Close a Deal</span></h3>
+<p class="footerParagraph">
+  <a [routerLink]="['/IndividualPartnershipComponent']" style="text-decoration: none">Review deal details</a><br>
+  <a [routerLink]="['/IndividualPartnershipComponent']" style="text-decoration: none">Make application</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Sign to close deal</a>
+</p>
+</div>
+
+</section>
+<section class="footergridcontainer">
+
+<div class="footerPledgeDeals">
+<h3 class="footerHeader3"><span style="border-bottom: 1.5px solid #222;">Jobs</span></h3>
+<p class="footerParagraph">
+  <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none">List your deal</a><br>
+  <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none">State ideal deal maker</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Start recieving applications</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Review applications</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Select ideal and close Deal</a>
+</p>
+<h3 class="footerHeader3"><span style="border-bottom: 1.5px solid #222;">To Close a Deal</span></h3>
+<p class="footerParagraph">
+  <a [routerLink]="['/IndividualPartnershipComponent']" style="text-decoration: none">Review deal details</a><br>
+  <a [routerLink]="['/IndividualPartnershipComponent']" style="text-decoration: none">Make application</a><br>
+  <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Sign to close deal</a>
+</p>
+</div>
+
+</section>
+</div>
+
+
+<div class="footerBottomQuote">
+<div class="bottomServiceRow">
+<div class="footerbottom">
+<div class="firstfooterflex">
+	<img src="assets/funding.svg" style="height: 100px;width: 100px">
+</div>
+<div class="secondfooterflex">
+	<h2 class="testClass"><span>+</span><a [routerLink]="['/InvestmentPageComponent']" style="text-decoration: none">Invest. avail.</a></h2>
+	<h2 class="testClass"><span>+</span><a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Your Invest.</a></h2>
+</div>
+</div>
+
+<div class="pledgeBottom">
+<div class="firstfooterflex">
+	<img src="assets/pledge.svg" style="height: 100px;width: 100px">
+</div>
+<div class="secondfooterflex">
+	<h2 class="testClass"><span>+</span><a [routerLink]="['/PledgeComponent']" style="text-decoration: none">Partnerships</a></h2>
+	<h2 class="testClass"><span>+</span><a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Your Partners</a></h2>
+</div>
+</div>
+
+<div class="dealsBottom footerLogo">
+<div class="imgd">
+</div>
+</div>
+
+<div class="dealsBottom">
+<div class="firstfooterflex">
+	<img src="assets/deals.svg" style="height: 100px;width: 100px">
+</div>
+<div class="secondfooterflex">
+	<h2 class="testClass"><span>+</span><a [routerLink]="['/BusinessDealsComponent']" style="text-decoration: none">Deals
+  </a></h2>
+	<h2 class="testClass"><span>+</span><a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Your Deals
+  </a></h2>
+</div>
+</div>
+<div class="footerbottom">
+<div class="firstfooterflex">
+	<img src="assets/job.svg" style="height: 100px;width: 100px">
+</div>
+<div class="secondfooterflex">
+	<h2 class="testClass"><span>+</span><a [routerLink]="['/JobsComponent']" style="text-decoration: none">Jobs</a></h2>
+	<h2 class="testClass"><span>+</span><a [routerLink]="['/StatisticsComponent']" style="text-decoration: none">Your Jobs</a></h2>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</section>
+</main>

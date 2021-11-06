@@ -1,0 +1,1557 @@
+/*Document level adjustments*/
+ * {
+  box-sizing: border-box;
+ }
+
+ html {
+  font-size: 17px;
+ }
+
+
+
+ @media (max-width: 900px) {
+  html { font-size: 15px; }
+ }
+
+ @media (max-height: 400px) {
+  html { font-size: 13px; }
+ }
+
+/*Rem this is relative to html document font-size
+Em this is relative to parent element*/
+ h1 {
+  font-size: 2rem;
+ }
+
+ h2 {
+  font-size: 1.5rem;
+ }
+
+ h3 {
+  font-size: 1rem;
+ }
+
+ p {
+  font-size: 1.2rem;
+ }
+
+ .workSans {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: normal;
+ }
+
+ .robotoCondensed {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+ }
+
+ .alegreyaserif {
+  font-family: 'Alegreya', serif;
+  font-weight:normal;
+ }
+
+ .rufinaserif {
+  font-family: 'Rufina', serif;
+  font-weight: normal;
+ }
+
+ .playfair {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+ }
+
+.belleFairs {
+  font-family: 'Bellefair', serif;
+  font-weight:100;
+ }
+
+ .ibmplexmono {
+  font-family: 'IBM Plex Mono',monospace;
+  font-weight:400;
+ }
+ .pageLayout {
+  display: grid;
+  margin:0px;
+  grid-template-areas: 'body footer';
+  grid-template-rows: min-content minmax(300px,auto) ;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  width: 100vw;
+ }
+
+ .individualfooterGrid {
+  display: grid;
+  box-sizing: border-box;
+ }
+
+/*For the links on the sides */
+.urlfront {
+      background:repeating-linear-gradient(120deg,#141415 2.5%, #0E1E0E 2.5% 5%, #D95656 5% 7.5%,#1a39e1 7.5% 10%,#5C592B 10% 12.5%);
+      align-items: center;
+      justify-content: center;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip:text;
+      color: transparent;
+      font-weight: 400;
+}
+
+/*---------------------This is the footer code--------------------------------*/
+
+.footerContentRow {
+  display:grid;
+  margin:0px;
+  background:linear-gradient(to top,#dfdf94a8 70%,#F2F5A9);/*Change this to linear gradient*/
+  padding-right:95px;/*Gives room to calendar*/
+  grid-template-columns: repeat(2,1fr) repeat(2,1fr);
+  grid-template-rows:1fr;
+ }
+
+ .footerIndividual {
+  display:grid;
+  margin:0px;
+  background:linear-gradient(to top,#dfdf94a8 70%,#F2F5A9);/*Change this to linear gradient*/
+  grid-template-columns: repeat(2,1fr) repeat(2,1fr);
+  grid-template-rows:1fr;
+ }
+
+.footerBottomQuote {
+/*Makes the position of the element to be positioned at the bottom
+in relation to the footer div*/
+  position: sticky;
+  bottom: 0;
+  background:#fff;
+  padding-right:95px;
+}
+
+.footerBottomIndividual {
+  position: sticky;
+  bottom: 0;
+  background:#fff;
+}
+
+.testClass {
+  font-family: 'IBM Plex Mono',monospace;
+  font-weight:400;
+  font-size:1rem;
+  background: repeating-linear-gradient(120deg,#D2BE57 2.5%, #228B22 2.5% 5%, #FF0000 5% 7.5%,#000000 7.5% 10%,#938A10 10% 12.5%);
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-clip: text;/*This means the background should extend into the text also*/
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: normal;
+}
+
+.bottomServiceRow {
+  display:grid;
+  margin:0px;
+  grid-template-columns: repeat(2,1fr) 0.5fr repeat(2,1fr);
+  grid-template-rows:1fr;
+}
+
+.footergridcontainer {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding:0 15px;
+}
+
+.footergrid {
+  display:grid;
+  border-right-style: double;
+  border-right-width: 6px;
+  align-content: baseline;
+}
+
+
+/*---------------------End of Footer Code-------------------*/
+
+.quoteSecTitle {
+  text-align: center;
+  padding: 10px 0;
+}
+.quoteSecTitle h2 {
+  font-size: 18px;
+  margin: 0px;
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.bottomServiceRow {
+  display:grid;
+  margin:0px;
+  grid-template-columns: repeat(2,1fr) 0.5fr repeat(2,1fr);
+  grid-template-rows:1fr;
+}
+
+.footergridcontainer {
+  margin-top: 5px;
+  display: grid;
+  padding: 0 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.footergrid {
+  display:grid;
+  border-right-style: double;
+  border-right-width: 6px;
+  align-content: baseline;
+}
+ .positionSticky {
+  top: 0;
+  position: sticky;
+  background: #fff;
+  z-index: 1000;
+
+}
+.searchSection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding-top: 10px;
+  width: 100%
+}
+.searchSection .headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 10px;
+}
+
+.individualItem {
+  display: flex;
+  flex:1;
+}
+
+.footergrid {
+  display:grid;
+  border-right-style: double;
+  border-right-width: 6px;
+  align-content: baseline;
+}
+
+.imgd {
+  background-clip: border-box;
+  background-image: url('../../assets/letter.svg');
+  height: 150px;
+  width: 150px;
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.uptriangle {
+   width: 0;
+   height: 0;
+   border-bottom: 50px solid #D2BE57;
+   border-left: 25px solid transparent;
+   border-right: 25px solid transparent;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   margin-right: 25%;
+   margin-left: 25%;
+}
+
+.pledgeBottom {
+  display: flex;
+  align-items: flex-end;
+  height: 115px;
+}
+.dealsBottom {
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+  height: 115px;
+}
+
+
+.footerPledgeDeals {
+  display:grid;
+  align-content: baseline;
+}
+
+.footerCentral {
+  display: grid;
+  align-content: flex-start;
+  padding-top: 18px;
+}
+.footergridcontainer.hide-section {
+  background: #d1bd57;
+  margin-top: 0px;
+  align-content: flex-start;
+}
+.footerCentral  h3{
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+}
+
+
+.footergridwork {
+  display:grid;
+  border-left-style: double;
+  border-left-width: 6px;
+  align-content: baseline;
+  padding-left: 10px;
+}
+
+.footerbottom {
+  display: flex;
+  align-items: flex-end;
+  height: 115px;
+}
+.firstfooterflex {
+  flex:0.5;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.secondfooterflex {
+  flex:4.5;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  margin-left:10px;
+}
+
+.underlineBlack {
+  border-bottom: 4px solid white;
+  display: inline-block;
+  line-height: 1;
+}
+
+
+.logofooter {
+  background: transparent;
+}
+
+.linkClassNoCaps {
+  background: repeating-linear-gradient(60deg,#D2BE57 2.5%, #228B22 2.5% 5%, #F00 5% 7.5%,#000 7.5% 10%,#E6B216 10% 12.5%);
+  align-items: center;
+  justify-content: center;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: inherit;
+}
+
+ .body {
+  display: grid;
+  background: linear-gradient(to top,#EFF0CA 10%,#f3f3e9 50%,#fdfefe);/*Apply the linear gradient background going up*/
+  margin:0px;
+  grid-template-areas: "menu-section-left menu-section-centre menu-section-right";
+  grid-template-rows: minmax(auto,1fr);
+  grid-template-columns: minmax(auto,4fr)  minmax(auto,15fr) minmax(auto,1fr);
+  grid-gap: 5px;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+ .bodyIndividual {
+  display: grid;
+  background: linear-gradient(to top,#EFF0CA 10%,#f3f3e9 50%,#fdfefe);/*Apply the linear gradient background going up*/
+  margin:0px;
+  grid-template-areas: "menu-section-left menu-section-centre";
+  grid-template-rows: minmax(auto,1fr);
+  grid-template-columns: minmax(auto,4fr)  minmax(auto,16fr);
+  grid-gap: 5px;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  box-sizing: border-box;
+}
+
+/*Top section*/
+.menu-section-left {
+    min-height: 100vh;
+}
+
+.logo-section {
+position: sticky;
+top: 0;
+left: 0;
+display: grid;
+justify-items: start;
+align-items: start;
+grid-template-rows: minmax(auto,300px) minmax(auto,auto);
+grid-template-columns: 1fr;
+grid-gap: 0px;
+}
+
+.logo-img {
+  display: flex;
+  margin:auto;
+}
+
+.menuItem {
+  background-image:repeating-linear-gradient(120deg,#D2BE57 2.5%, #228B22 2.5% 5%, #FF0000 5% 7.5%,#000000 7.5% 10%,#E6D816 10% 12.5%);
+  padding-bottom:1px;
+  position: relative;
+  text-align: center;
+}
+
+.menuItem > img {
+  background-color:  white ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 210px;
+  width: 300px;
+  border-right: 4px;
+  border-right-style: dashed;
+  border-right-color: #D2BE57;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.menuItem > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 5px;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.menuItem > div::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 300px;
+  height: 210px;
+  background: inherit;
+  background-attachment: fixed;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.menuItem > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 210px;
+  background: rgba(11, 10, 10, 0.61);
+}
+.menuItem > div > h2 {
+  margin: 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.menuItem > div > p {
+  margin: 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.menuItem > div > a {
+  margin: 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.notify {
+  display: grid;
+}
+
+.notSection {
+  flex: 1;
+  margin-left:10px;
+  margin-right: 10px;
+  border-bottom: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-overflow: ellipsis;
+}
+
+.notHeader {
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 4px solid #D2BE57;
+  line-height: 1;
+}
+
+.firstPart {
+  padding:1px;
+  float: left;
+  margin-left:1px;
+}
+
+.secondPart {
+  padding: 1px;
+  float: left;
+  border-bottom: 2px solid black;
+  color:#D2BE57;
+}
+
+.flexContainer {
+display: flex;
+display: -webkit-flex;
+flex-flow: column wrap;
+ -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.flexContainer > div {
+  margin: 1px;
+  padding:1px;
+  -webkit-flex:1;
+  flex:1;
+}
+
+
+
+
+
+.menu-section-centre {
+  /*This should be aligned to the start of the axis*/
+  display: grid;
+  grid-template-areas: "searchsort-element";
+  grid-template-rows: max-content;
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+}
+
+.searchsort-element {
+  display: grid;
+  grid-template-areas: "search-Element"
+             "notification-Element";
+  grid-template-rows: minmax(auto,0.25fr) minmax(auto,2fr);
+  grid-column: 1fr;
+  grid-gap: 1px;
+}
+
+
+
+.search-Element {
+  display: grid;
+  grid-template-areas: "searchButtonElement" "investIntro";
+  grid-template-rows: 2fr;
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+}
+
+.searchButtonElement {
+  display: grid;
+  position: -webkit-sticky;
+    position: sticky;
+  grid-template-areas: "searchSection";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+}
+
+
+.investIntro {
+  display: flex;
+  margin: auto -5px ;
+}
+
+.investIntro .investSection {
+  flex:1;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+  background-color: #f6f4e5;
+  margin: 0 5px;
+}
+
+
+.searchInput {
+  width: 35%;
+  color:#D2BE57;
+}
+
+.searchbutton {
+  width:30%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.menuClass {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom:3px solid #D2BE57;
+}
+
+.menuClass > div {
+  height: 100%;
+  width: 45%;
+  margin: auto;
+}
+
+.intro {
+  font-family: 'Alegreya', serif;
+  font-weight:bold;
+  align-content: center;
+  text-transform:uppercase;
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  margin-left:4px;
+}
+
+.introText {
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  align-content: center;
+  font-size:1.15rem;
+  color: #c09933;
+  margin:5px;
+}
+
+.introTextIndividual {
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  align-content: center;
+  color: #c09933;
+  margin:5px;
+}
+
+.introParagraph {
+  font-family: 'Alegreya' , serif;
+  font-weight: normal;
+  align-content:center;
+  font-size: 1.1rem;
+  /*text-shadow: 0.2px 0px #D2BE57;*/
+  margin: 3px;
+  padding: 0.15em;
+}
+
+.introIndividual {
+  font-family: 'Alegreya' , serif;
+  font-weight: normal;
+  align-content: center;
+  font-size: 0.95rem;
+  margin: 3px;
+  padding: 0.15em;
+}
+.learnMore {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.3em;
+  background: #483D8B;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.underlineBlack {
+  border-bottom: 2px solid black;
+}
+
+.underlineGold {
+  border-bottom:4px solid #D2BE57;
+}
+
+.investmentLink {
+      background: repeating-linear-gradient(60deg,#D2BE57 2.5%, #228B22 2.5% 5%, #DB0A0A 5% 7.5%,#000 7.5% 10%,#9B8C2D 10% 12.5%);
+      align-items: center;
+      justify-content: center;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight:bold;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-color:#D2BE57;
+}
+
+.linkClass {
+      text-transform:uppercase;
+      background:
+      repeating-linear-gradient(60deg,#D2BE57 2.5%, #228B22 2.5% 5%, #F00 5% 7.5%,#000 7.5% 10%,#E6B216 10% 12.5%);
+      align-items: center;
+      justify-content: center;
+      -webkit-background-clip: text;
+      color: transparent;
+}
+
+.urlClass {
+      text-transform:uppercase;
+      background:repeating-linear-gradient(120deg,#D2BE57 2.5%, #228B22 2.5% 5%, #F00 5% 7.5%,#000 7.5% 10%,#8E871B 10% 12.5%);
+      align-items: center;
+      justify-content: center;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 400;
+}
+
+
+.underline {
+  border-bottom: 4px solid #D2BE57;
+  display: inline-block;
+  line-height: 1;
+}
+
+.underlineWhite {
+  border-bottom: 1px solid #FFFF;
+  display: inline-block;
+  line-height: 1;
+}
+
+.daysNotification {
+  font-size: 0.8rem;
+  font-weight:lighter;
+}
+
+
+.notificationSection {
+  display: flex;
+  align-items: baseline;
+  align-content: stretch;
+  max-height: 80px;
+}
+
+
+.iconsRight {
+  flex: 1;
+  margin-right:20%;
+}
+
+
+.iconsLeft {
+  flex: 1;
+  margin-left:20%;
+}
+
+.addToWatchlist {
+      align-items: center;
+      justify-content: center;
+      color: #8A7717;
+      font-weight: 400;
+}
+
+
+.notification-Element {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-column: 1fr;
+}
+
+.upper-notification {
+  border-bottom: 4px #D2BE57;
+}
+
+.smallIntroCB {
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  align-content: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.footerHeader {
+  font-family: 'Neuton', serif;
+  font-weight: 700;
+  align-content: center;
+  color:#222;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-left: 0;
+  line-height: 1;
+}
+
+.footerHeader:after {
+  content: "";/*This is necessary for pseudo element to work */
+  display: block;/*This will put the pseudo element on its own line.*/
+  margin:10px 0 0;/*This will center the border*/
+  width: 20%;/*This sets the width of the border.*/
+  padding-top: 1px;
+  border-bottom: 4px solid #222;
+  transition: 1s;
+}
+
+.footerHeader:hover:after {
+  width: 40%
+}
+
+.footerHeader3 {
+  font-family: 'Neuton', serif;
+  font-weight: bold;
+  font-size:1.2rem ;
+  margin: 0 0 20px;
+  align-content: center;
+  color: #222;
+}
+
+.footerParagraph {
+  font-family: 'Neuton', serif;
+  font-weight: 400;
+  align-content: center;
+  font-size: 1.2rem;
+  margin: 0 0 15px;
+  color: #222;
+}
+
+.smallIntroNoCB {
+  font-family: 'Alegreya', serif;
+  font-weight: normal;
+  align-content: center;
+  font-size: 1.25rem;
+}
+
+.campaignTitle {
+  font-family: 'Alegreya', serif;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+
+.middle-uppernotification {
+  margin-top: 15px;
+}
+
+.middle-lowernotification {
+  margin-top: 15px;
+}
+
+.lower-notification {
+  margin-top: 15px;
+}
+
+.notification-class {
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+.fundraising-element {
+  /*Put borders and other specific styling to fundraising section*/
+  display: grid;
+  grid-template-areas: "flex-nav"
+             "flex-container"
+             "flex-footer";
+  grid-template-rows: minmax(auto,1fr) minmax(auto,9fr);/*Create 2 unequal rows*/
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+}
+
+.pledge-element {
+  display: grid;
+  grid-template-areas: "flex-nav"
+             "flex-container"
+             "flex-footer";
+  grid-template-rows: minmax(auto,1fr) minmax(auto,9fr);/*Create 2 unequal rows*/
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+}
+.deals-element {
+  display: grid;
+  grid-template-areas: "flex-nav"
+             "flex-container"
+             "flex-footer";
+  grid-template-rows: minmax(auto,1fr) minmax(auto,9fr);/*Create 2 unequal rows*/
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+}
+.jobs-element {
+  display: grid;
+  grid-template-areas: "flex-nav"
+             "flex-container"
+             "flex-footer";
+  grid-template-rows: minmax(auto,1fr) minmax(auto,9fr);/*Create 2 unequal rows*/
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+}
+
+
+.flex-nav {
+  display: flex;
+  display: -webkit-flex;
+  align-items:stretch;
+  flex-flow:row nowrap;
+  align-self:baseline;
+}
+
+.flex-nav-right {
+flex: 1;
+/*border: 5px solid blue;
+background-color: white;*/
+}
+
+.flex-nav-left {
+flex: 1;
+/*border: 5px solid tomato;*/
+/*background-color: white;*/
+}
+
+.flex-container { /*Fix the  small screen issue using media queries*/
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: inline-flex;
+  display: -webkit-inline-flex;
+  justify-content: space-around;
+  flex-flow:column nowrap;
+  align-content: flex-start;
+  border-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #D2BE57;
+  padding: 0.5em;
+}
+
+.headerInvestment { /*Fix the  small screen issue using media queries*/
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: inline-flex;
+  display: -webkit-inline-flex;
+  justify-content: space-around;
+  flex-flow:column nowrap;
+  align-content: flex-start;
+  padding: 0.5em;
+}
+
+.notificationElement {
+  float: right;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  text-decoration-color: gold;
+}
+
+.colorWhite {
+  color: #FFFF
+}
+
+
+.valuationTitle {
+  font-family: 'Alegreya', serif;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+
+.flex-video {
+flex:4;
+flex-flow:row nowrap;
+background-color: white;
+justify-content: stretch;
+margin: 2px;
+flex-direction: column;
+display: flex;
+}
+
+.flex-video img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flexButton {
+margin:auto;
+width:100%;
+font-weight: bold;
+font-size: larger;
+}
+
+.cardElement {
+  max-height: 100%;
+  max-width: 100%;
+  /*PUT BORDER HERE*/
+}
+
+
+.video-grid {
+  display: grid;
+  grid-template-areas: "grid-header"
+             "grid-body"
+             "grid-footer";
+  grid-template-rows: minmax(auto,1fr) minmax(auto,6fr) minmax(auto,3fr);
+  grid-template-columns: 1fr;
+}
+
+.grid-header {
+  display: grid;
+  grid-template-areas: "profilePic title";
+  grid-template-rows: 1fr;
+  grid-template-columns: minmax(auto,auto) minmax(auto,auto);
+}
+
+.profilePic {
+  flex: 0 0 50px;
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 50px;
+  width: 50px;
+}
+
+.title {
+  flex: 1;
+  background-color: tomato;
+}
+
+
+
+
+.grid-body {
+  flex:1;
+  flex-flow: row nowrap;
+  background-color:#bfbf40;
+  border: 1px solid black;
+}
+
+
+.grid-footer {
+  display: grid;
+  grid-template-areas: "details"
+             "pledges";
+  grid-template-rows: minmax(auto,6fr) minmax(auto,4fr);
+  grid-template-columns: 1fr;
+}
+
+.details {
+  flex:1;
+  flex-flow: row nowrap;
+  background-color:blue;
+  border: 1px solid tomato;
+}
+
+.pledges {
+  flex:1;
+  flex-flow: row nowrap;
+  background-color:smooth;
+  border: 1px solid yellow;
+}
+
+
+
+
+.menu-section-right {
+  /*This should be aligned to the stretch of the axis*/
+  display: grid;
+  grid-template-areas:
+             "monthSection"
+             "dateSection";
+  grid-template-rows:  0.1fr 8fr;/*minmax(auto;10%) minmax(auto;10%) minmax(auto;80%);/*Create 3 unequal sections*/
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+  position: fixed;
+  right: 0;
+  width: 85px;
+  height: 100vh;
+  z-index: 100;
+}
+
+.accountSection {
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  background: white;
+}
+
+
+.accountSectionFlex {
+  display: flex;
+  justify-content: space-around;
+  flex-flow:row nowrap;
+  align-items: stretch;
+  align-content: center;
+  border-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #D2BE57;
+  border-top: 3px;
+  border-top-style: solid;
+  border-top-color: #D2BE57;
+}
+
+.accountSectionFlex > h2 {
+  font-family: 'IBM Plex Mono',monospace;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.monthSection {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 30px 30px 30px;
+  grid-template-columns: 1fr;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #D2BE57;
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-right-color: #D2BE57;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #D2BE57;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #D2BE57;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #D2BE57;
+}
+
+.caarrow-left {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #D2BE57;
+}
+
+.caarrow-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #D2BE57;
+}
+
+
+.dateSection {
+  display: grid;
+  grid-template-rows: repeat(16,0sfr);
+  grid-template-columns: 1fr;
+  grid-gap:1px;
+}
+
+.badge1 {
+   position:relative;
+}
+
+.badge1[data-badge]:after {
+   content:attr(data-badge);
+   position:absolute;
+   top:-10px;
+   right:-26px;
+   font-size:0.7em;/*Change this to responsive*/
+   background:#D2BE57;
+   font-family: 'IBM Plex Mono', monospace;
+   color:white;
+   width:20px;
+   height:20px;
+   text-align:center;
+   line-height:20px;
+   font-weight: 400;
+   border-radius:50%;
+}
+
+/*When someone has viewed and done nothing with IT */
+
+.badge12 {
+   position:relative;
+}
+
+
+.badge12[data-badge]:after {
+   content:attr(data-badge);
+   position:absolute;
+   top:-10px;
+   right:-26px;
+   font-size:0.7em;/*Change this to responsive*/
+   background:transparent;
+   font-family: 'IBM Plex Mono', monospace;
+   color:#D2BE57;
+   width:20px;
+   height:20px;
+   text-align:center;
+   line-height:20px;
+   font-weight: 400;
+   border-radius:50%;
+}
+
+/*When someone has invested*/
+.badge13 {
+   position:relative;
+}
+
+.badge13[data-badge]:after {
+   content:attr(data-badge);
+   position:absolute;
+   top:-10px;
+   right:-26px;
+   font-size:0.6em;/*Change this to responsive*/
+   border:2px solid #D2BE57;
+   font-family: 'IBM Plex Mono', monospace;
+   color:#D2BE57;
+   width:20px;
+   height:20px;
+   text-align:center;
+   line-height:20px;
+   font-weight: 400;
+   border-radius:50%;
+}
+
+/*When someone has just viewed #919084*/
+.badge14 {
+   position:relative;
+}
+
+.badge14[data-badge]:after {
+   content:attr(data-badge);
+   position:absolute;
+   top:-10px;
+   right:-26px;
+   font-size:0.6em;/*Change this to responsive*/
+   background:#237923;
+   font-family: 'IBM Plex Mono', monospace;
+   color:#f3f3e9;
+   width:20px;
+   height:20px;
+   text-align:center;
+   line-height:20px;
+   font-weight: 400;
+   border-radius:50%;
+}
+
+
+.first {
+display: grid;
+justify-items: center;
+align-items: center;
+background:repeating-linear-gradient(120deg,#D2BE57 2.5%, #228B22 2.5% 5%, #FF0000 5% 7.5%,#000000 7.5% 10%,#E6D816 10% 12.5%);
+padding: 3px;
+grid-template-rows:1fr;
+grid-template-columns: 1fr;
+}
+.first.active {
+  position: relative;
+}
+.first.active .firstInner {
+  background: #776d38;
+}
+.first.active .firstInner h2 {
+
+}
+.firstInner {
+  display:grid;
+  height: 98%;
+  width: 98%;
+  background:white;
+  margin:auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.firstInner > h2 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+}
+
+.firstInner > h1 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+}
+
+.next {
+display: grid;
+justify-items: center;
+align-items: center;
+grid-template-rows: 1fr;
+grid-template-columns: 80% 20%;
+background: white;
+border:5px;
+height: 40px;
+border-style: solid;
+border-color: #D2BE57;
+}
+
+.next  p {
+  font-family: 'Alegreya', serif;
+  font-weight:bold;
+  font-size: 14px;
+  margin: 0px;
+  line-height: 23px;
+}
+
+
+.preview {
+display: grid;
+justify-items: center;
+align-items: center;
+grid-template-rows: 1fr;
+grid-template-columns: 20% 80%;
+background: white;
+border:5px;
+height: 40px;
+border-style: solid;
+border-color: #D2BE57;
+}
+
+.preview p {
+  font-family: 'Alegreya', serif;
+  font-weight:bold;
+  font-size: 14px;
+  margin: 0px;
+  line-height: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Action section this should be cetrally aligned*/
+.action-section-left {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: brown;
+}
+
+.action-section-centre {
+  display: grid;
+  justify-items: center;
+  grid-template-areas: "pledges mainlogo investments";
+  grid-template-rows: 1fr;
+  grid-template-columns: 45% 10% 45%;
+  align-items: center;
+}
+
+
+.pledges {
+display: grid;
+background: #ff00ff;
+}
+
+.mainlogo {
+  display: grid;
+  background: purple;
+}
+
+.investments {
+display: grid;
+background: #ec13ec;
+}
+
+/*This is on the left side*/
+.jobs {
+display: grid;
+background: #f906f9;
+}
+
+/*This is on the right side */
+.deals {
+display: grid;
+background: #f20df2;
+}
+
+
+
+.action-section-right {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background:orange;
+}
+/*Footer section everything here should be aligned to the end of the axis*/
+.footer-section-left {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background:purple;
+}
+
+.footer-section-centre {
+  display: grid;
+  justify-items: center;
+  grid-template-areas: "seek-investments sponsor-pledges setUpdeals setUpPledges";
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  background:gold;
+}
+
+.seek-investments {
+display: grid;
+justify-items: center;
+align-items: center;
+background: #e619e6;
+}
+
+.sponsor-pledges {
+display: grid;
+justify-items: center;
+align-items: center;
+background: #df20df;
+}
+
+.setUpdeals {
+display: grid;
+justify-items: center;
+align-items: center;
+background: #9f609f;
+}
+
+.setUpPledges {
+display: grid;
+justify-items: center;
+align-items: center;
+background: #867986;
+}
+
+.footer-section-right {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background:green;
+}
+
+.componentSection {/*This is row one column 2*/
+  grid-template-rows: repeat(5,1fr);/*This is for the components section that have the same size*/
+}
+
+.lowerSection {/*This represents the action section and footer section*/
+  grid-template-rows: minmax(auto,3fr);
+  grid-template-rows: minmax(auto,2fr);
+}
+
+.menuBtn, .menuCloseBtn {
+  display: none;
+}
+
+/*Footer links */
+.footerLinks{
+  background:#483D8B;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+/*---------------------------------------- Responsive View ------------------------------------*/
+
+
+@media screen and (max-width: 1589px) {
+  h3, .smallIntroCB, .mat-list-base .mat-list-item {font-size: 14px;}
+  h2 {font-size: 18px;}
+  .searchbutton {font-size: 16px;}
+  .mat-expansion-panel-header-description, .mat-expansion-panel-header-title {margin-right: 10px;}
+  .mat-expansion-panel-header {font-size: 13px;}
+  .flex-video {width: 28%; flex: 0 1 32.70%;}
+  .secondfooterflex > h2 {font-size: 16px;}
+  .pledgeBottom, .footerbottom {align-items: center;  }
+
+  .badge13[data-badge]:after, .badge14[data-badge]:after {top: -10px;right: -26px;font-size: 0.6em;border: 1px solid #D2BE57;width: 20px;height: 20px;line-height: 20px;}
+}
+
+@media screen and (max-width: 1366px) {
+  .mat-expansion-panel-header {padding: 0 10px 0 5px;}
+  .linkClass {justify-content: left;}
+  .mat-expansion-panel-header-description, .mat-expansion-panel-header-title{margin-right: 5px;}
+  .searchbutton {width: 25%;}
+  .footerHeader {font-size: 18px;}
+  .footerParagraph {font-size: 14px;}
+  h3.footerHeader3 {font-size: 12px;}
+  .secondfooterflex > h2 {font-size: 13px;}
+  .footergridcontainer, .footergridwork {padding-left: 10px;}
+}
+
+@media screen and (max-width: 1199px) {
+  h2, .accountSectionFlex > h2, .flexButton, .introText {font-size: 14px;}
+  .mat-form-field-appearance-legacy .mat-form-field-infix, .introParagraph {font-size: 13px;}
+  .searchbutton {width: 20%;}
+  .smallIntroNoCB .searchbutton {width:30%; font-size:14px;}
+  .mat-expansion-panel-header {font-size: 11px;height: 35px !important;}
+  h3, .smallIntroCB, .mat-list-base .mat-list-item {font-size: 12px;}
+  .introductionElement.positionSticky {top: 66px;}
+  .intro, .footerHeader {font-size: 15px;}
+  .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {padding: 0 10px;font-size: 13px;}
+
+  .flex-nav-left {flex: 2;}
+  .notSection  .ibmplexmono {margin: 0;}
+  .notSection  .firstPart {font-size: 12px;}
+  .notSection  .secondPart {font-size: 14px;}
+
+
+}
+
+
+@media screen and (max-width: 1007px) {
+  .body {grid-template-columns: minmax(auto,2fr) minmax(auto,17fr);}
+  .firstfooterflex, .hide-section, .smallIntroCB  span, .opportunitiesText  {display: none;}
+  .footerContentRow {grid-template-columns: repeat(2,1fr) repeat(2,1fr);}
+  .flex-video {width: 42%; flex: 0 1 49.20%;}
+  .accountSectionFlex  h2  {margin: 2px; display: flex; justify-content: flex-end;}
+  .headerTop .searchbutton  {margin: 0 10px;display: flex;align-items: center;justify-content: center;}
+  .logo-img img {max-width: 150px;}
+  .logo-section { grid-template-rows: minmax(auto,200px) minmax(auto,auto);}
+  .logo-img img {max-width: 150px;}
+}
+
+@media screen and (max-width: 767px) {
+  .flex-video {width: 100%; flex: 0 1 100%;}
+  .accountSection {width: 40%;}
+  .body {padding-right: 85px;}
+  .menu-section-right {width: 80px;}
+  .introductionElement  {grid-template-rows: 1fr 1fr;grid-template-columns: repeat(2,1fr); position: static; }
+  .headerTop {flex-wrap: wrap;}
+  .searchInput {width: 70%;}
+  .accountSectionFlex {width: 100%;}
+  .accountSectionFlex h2 {width: 100%; justify-content: space-between; align-items: center;}
+  .accountSection {width: 100%; margin-top: -14px;}
+  .headerTop .searchbutton {margin:0 0 0 10px;}
+  .searchSection {padding-top: 0;}
+  .smallIntroNoCB {margin: 0 0 10px;}
+}
+@media screen and (max-width: 640px) {
+.footerContentRow {display: none;}
+.menuBtn, .menuCloseBtn {display: block;}
+.menu-section-left {position: fixed;left: -100%;top: 0;transition: all 0.3s;z-index: 99999;width: 100%;height: 100%;background: #fff;}
+.menu-section-left.open {left: 0;}
+.body {display: flex;flex-direction: column;}
+.searchInput {width: 46%;}
+.menuBtn .btn { border: 1px solid rgba(0,0,0,.12);padding: 0 15px; height: 30px; width: 30px; background: transparent; display: flex;align-items: center;justify-content: center; margin-left: 10px;}
+.menuBtn .btn img  {max-width: 20px;}
+.menuCloseBtn {background: transparent; z-index: 999; cursor: pointer; border: none; position: absolute; top: 10px; right: 10px;}
+.menuCloseBtn img {max-width: 20px;}
+.bottomServiceRow {display: flex; flex-wrap: wrap;}
+.footerbottom {order: 2; height: auto;}
+.pledgeBottom {order: 3; height: auto;}
+.dealsBottom {order: 4; height: auto;}
+.footerLogo {order: 1; height: 90px; width: 100%;}
+.footerLogo .imgd {width: 100%;}
+.smallIntroNoCB {font-size: 14px;}
+.smallIntroNoCB img {max-width: 15px;}
+.smallIntroNoCB .searchbutton {font-size: 12px;}
+.investIntro {flex-direction: column; margin: 0;}
+.investIntro .investSection {margin: 0 0 10px;}
+.searchbutton {font-size: 14px;}
+}

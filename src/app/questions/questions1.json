@@ -1,0 +1,237 @@
+
+[
+     {
+		  class:'signup',
+          introduction:"Karibu Mzynga",
+          firstName:"firstName",
+          surname:"Surname",
+          phoneNumber:"Phonenumber",
+          pasword:"Password",
+          confirmPassword:"confirmPassword",
+          email:"Email"
+      },
+	  
+	  {
+	    class:'passwordReset',
+        password:"Enter password",
+         confirmPassword: "Re-enter password"
+	  },
+	  
+	  {
+	    classs : 'activationCode'
+        activation:"Enter activation code"
+       },
+	   
+	 {
+	     class:"businessInfo",
+          physicalLocation:"Physical Location",
+          postOfficeAddress : "Address",
+          businessPhoneNumber: "Business Phone Number",
+          companyEmail:"Company mail",
+          website:"website",
+		  registeredName:"Registered business name",
+		  registeredBizNumber : "Enter registration number",
+          industry:"Industry",
+        YOR:"Year of registration",
+        contryOfRegistration:"Country of registration",
+        noofShares:"No of shares",
+        companyValues:"Company values"
+	 },
+	  {
+	     class:"typeOfCompany"
+         type:"selection",
+         ltd:"Limited Company",
+         plc:"Public limited company",
+         partnership:"Partnership"
+        },
+	 
+	 {
+		class:"markets",
+		eastAfrica:"eastAfrica",
+         southAfrica:"southAfrica",
+         westAfrica:"westAfrica",
+         northAfrica:"northAfrica"
+		 type:"selection"
+	 },
+	 
+	 {
+		class:"countriesPresentEA",
+		type:"selection",
+		kenya:"Kenya",
+        uganda:"Uganda",
+        Tanzania:"Tanzania",
+         Rwanda:"Rwanda",
+         DRC:"DRC",
+        Burundi:"Burundi",
+         sSudan:"South Sudan",
+		 ethiopia:"Ethiopia"
+	 },
+	 
+	 {
+		class:"countriesPresentSA",
+		type:"selection",
+        southAfrica:"SouthAfrica",
+        mozambique:"Moambique",
+        malawi:"Malawi",
+        lesotho:"Lesotho",
+        zimbambwe:"Zimbambwe",
+        swaziland:"Swaziland",
+        zambia:"Zambia",
+        namibia:"Namibia",
+        bostwana:"Bostwana",
+        angola:"Angola"
+	 },
+	 
+	{
+		class:"countriesPresentWA",
+		type:"selection",
+        nigeria:"nigeria",
+        senegal:"senegal",
+        ghana:"Ghana",
+        sieraleone:"Sieraleone",
+        chad:"Chad",
+        niger:"Niger"
+	 },
+	 
+	 {
+		class:"countriesPresentNA",
+         algeria:"Algeria",
+         morocco:"Morocco",
+         egypt:"Egypt",
+         sudan:"Sudan",
+         libya:"Libya",
+         westernSahara:"Western sahara",
+         tunisia:"Tunisia"
+	 },
+	 
+	 {
+		class:"patents",
+		type:"checkbox",
+		patents:"Does your company have any patents ?"
+	 },
+	 
+	 {
+		class:"products",
+		type:"checkbox",
+        text:"what does your company deal with?",
+		services:"Services",
+        products:"Products",
+        both:"Service and Products"
+	 },
+	 
+	 {
+	 class:"workingdays",
+	 type:"selection",
+     monday:"Monday",
+     tuesday:"Tuesday",
+     wednesday:"Wednesday",
+     thursday:"Thursday",
+     friday:"Friday",
+     saturday:"Saturday",
+     sunday:"Sunday"
+	 },
+	 
+	 {
+	 class:"workinghoursStart",
+     type:"selection",
+     5:"5AM",
+     6:"6AM",
+     7:"7AM",
+     8:"8AM",
+     9:"9AM",
+     10:"10AM",
+     11:"11AM",
+     12:"12NOON"
+	 },
+	 
+    {
+	 class:"workinghoursEnd",
+     type:"selection",
+      1:"1PM",
+      2:"2PM",
+      3:"3PM",
+      4:"4PM",
+      5:"5PM",
+      6:"6PM",
+      7:"7PM",
+      8:"8PM",
+      9:"9PM",
+      10:"10PM",
+       11:"11PM",
+      12:"12AM"
+	 },
+	 
+	 {
+	    [{
+		class:"productArray",
+        productName:"Product Name",
+         imagePhoto:"Upload photo",
+         currentPrice :"Current product price",
+         description:"Write a short description of the product",
+         percentageRevenue:"Percentage revenue contributed by the product"
+         }]
+	 },
+	 
+	 
+    {
+	 class:"employeeInfo",
+      position : "Position at Ferris Air",
+      Department: "Which department at Ferris Air do you work",
+      AccesstoEscrow: "Access rights to escrow ?",
+      COB:"Country of Birth",
+      Nationality:"List all your nationalities",
+      language:"List your languages"
+	  },
+      {
+		class:"languageLevel",
+          options:"Beginner,Intermediary,Expert",
+          type:"Dropdown"
+      },
+	  {
+		  class:"currentExperience",
+          from:"From",
+          to:"To"
+        },
+        {
+		class:"pastExperience",
+          place:"Company name",
+          from:"From",
+          to:"To"
+        },
+		{
+		 monthlyIncome:"What's your average monthly revenue for the last year",
+		 maximumRevenue:"What's your maximum revenue since registration",
+		 averageRevenue:"Average revenue last 5 years",
+		revenueLast5yrs: "Revenue last 5 years",
+        {
+		class:"year",
+        year:"Year",
+        amount:"amount"
+        }
+      loans:{
+        loans:"Any outstanding loans to any bank ?",
+        bank:"Name of Bank",
+        AmountInKshs:"Amount in Kshs",
+        frequencyOfPayment:{
+          type:"dropdown",
+          options:["Monthly","Quartely","Semi-annually","Yearly"],
+          amount:"Amount",
+          balancePending:"Amount pending on bank loan",
+          interestRate:"What's the interest rate for the banks?"
+        }
+		}
+ 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	  
+	 
+	  
+    
+  ]

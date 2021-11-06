@@ -1,0 +1,495 @@
+<body class="pageLayout">
+  <section class="bodyIndividual">
+
+    <section class="menu-section-left" [ngClass]="status ? 'open' : 'close'">
+      <button class="menuCloseBtn" (click)="status=!status">
+        <img src="../../assets/close-icon.svg"/>
+      </button>
+
+      <section class="logo-section">
+        <div class="logo-img">
+          <a [routerLink]="['/LandingPageComponent']">
+          <img src="assets/footerDope.svg" alt="Mzynga Technology" style="height:200px;width:200px">
+          </a>
+        </div>
+        <div class="notify">
+        <div class="notSection"
+        ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item><span class="urlfront">+ Investment process</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/InvestmentPageComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Inv. chances (113,467)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Request partnerships</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/PledgeComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ P.ship chances (12,467)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/QuestionsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item><span class="urlfront">+ Request deal</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/BusinessDealsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Deal chances(83,467)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/JobsComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Job (19,13,467)</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+
+        <div class="notSection" ng-class="{addBG:hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+        <a [routerLink]="['/LandingPageComponent']" style="text-decoration: none;">
+        <mat-list>
+        <mat-list-item> <span class="urlfront">+ Homepage</span></mat-list-item>
+        </mat-list>
+        </a>
+        </div>
+        </div>
+      </section>
+
+    </section>
+
+    <section class="menu-section-centre">
+      <!--THIS IS THE FIRST SECTION-->
+    <section class="searchsort-element">
+        <div class="searchSection positionSticky">
+          <div class="headerTop" style="width: 100%">
+        <section>
+            <div class="menuBtn">
+              <button type="button" class="btn" (click)="status=!status" ><img src="../../assets/menu-button.svg"/></button>
+            </div>
+        </section>
+        <section>
+          <h2 class="introTextIndividual">
+          <span class="underlineBlack">
+            Brookside Dairies Limited Investment Campaign(Standard Icon)
+          </span>
+          </h2>
+        </section>
+            <section class="accountSection">
+              <div class="accountSectionFlex">
+                <h2>To invest
+                  <button mat-stroked-button class="menuBttn">
+                    <span class="linkClass">
+                      Log In
+                    </span>
+                  </button>
+                </h2>
+              </div>
+            </section>
+          </div>
+          </div>
+    <div class="search-Element">
+      <div class="investIntro">
+        <dl class="investSection">
+          <video controls width="680px" height="320px" src='../../assets/KING.mp4'
+              type="video/mp4" poster='../../assets/brookside.jpg'>
+                  Sorry, your browser does not support embedded video
+          </video>
+        </dl>
+
+
+            <dl class="investSection">
+              <dt class="introTextIndividual"><span class="underlineBlack">Investments</span></dt>
+              <dd class="introIndividual">Cash capital investment :- upto<span class="underlineGold"> USD$ 4,000,000</span>
+                 <a [routerLink]="['/#']" class="learnMore"> more details</a>
+              </dd>
+              <dd class="introIndividual">Skill investment :-<span class="underlineGold"> 17 experts</span> needed
+                 <a [routerLink]="['/#']"  class="learnMore"> learn more</a>
+              </dd>
+              <dd class="introIndividual">Time investment :-<span class="underlineGold"> 160 hrs</span> consultation
+                 <a [routerLink]="['/#']"  class="learnMore"> learn more</a>
+              </dd>
+              <dt class="introTextIndividual">
+              <span class="underlineBlack">Partnerships</span>
+              </dt>
+              <dd class="introIndividual">Distribution partnerships :- <span class="underlineGold">20 chances</span>
+                 <a [routerLink]="['/#']" class="learnMore"> more details</a>
+              </dd>
+              <dd class="introIndividual">Legal partnerships :- <span class="underlineGold">2 chances</span>
+                 <a [routerLink]="['/#']" class="learnMore"> more details</a>
+              </dd>
+              <dd class="introIndividual">Education partnerships :- <span class="underlineGold">7 chances</span>
+                <a [routerLink]="['/#']" class="learnMore"> see all chances</a>
+              </dd>
+              <dt class="introTextIndividual">
+              <span class="underlineBlack">Business Deals</span>
+              </dt>
+              <dd class="introIndividual">Revenue supplement :- <span class="underlineGold">34 chances</span>
+                <a [routerLink]="['/#']" class="learnMore"> more details</a>
+              </dd>
+              <dd class="introIndividual">Share swap :- <span class="underlineGold">7 chances</span>
+                <a [routerLink]="['/#']" class="learnMore"> more details</a>
+              </dd>
+              <dd class="introIndividual">Custodial services :- <span class="underlineGold">4 chances</span>
+              <a [routerLink]="['/#']" class="learnMore"> see all deals</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+
+        <div class="notification-Element">
+
+        <div class="upper-notification">
+
+        <div class="upper-notification1">
+        <div class="flex-container">
+        <dt  class="introTextIndividual"><span class="underlineBlack">Capital Investment</span></dt>
+        <dd class="introIndividual">Lorem ipsum dolor sit amet, ne sed inimicus ullamcorper. Ex sumo melius inciderint sed, at qui ullum recteque? Ex sed assum tritani quaerendum, invidunt accusata delicata sit te, pro enim prima ipsum at! Ad vim habemus recusabo voluptatum, ei quem molestie percipitur pri. Nam in veniam aeterno rationibus, lorem argumentum no quo, est eu commune expetenda rationibus.</dd>
+        <dd>Phase 1 : Kshs 450,567,789<br>
+          Phase 2 : Kshs 345,678,900<br>
+          Phase 3 : Kshs 230,456,890</dd>
+        <dd class="introIndividual"> Lorem ipsum dolor sit amet, nec saepe graecis delectus ne, id sint virtute contentiones sed. Hinc offendit moderatius at has, sed quidam tractatos ea, ei mel tale latine efficiantur! Has ea civibus omittam, eu his posse sadipscing. Solum legendos eleifend id vis? Has agam quidam et, lorem antiopam vel ea!
+        Persius labores conclusionemque at eos, ne laudem possit iudicabit mel? Eum erat abhorreant accommodare an, lorem etiam mel ne! Mel munere iracundia signiferumque eu, an nullam tritani oblique pri. Illud solet te vis, ei autem eligendi moderatius nec, est ut nonumes legendos?</dd>
+        <dd>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Learn more</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Add to watchlist</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Invest</span></button>
+          </span>
+        </dd>
+        <dd>
+          <span class="notificationElement">
+          <span class="linkClass">7,345,677</span> invest. made and
+          <span class="linkClass">3,900</span> added to watchlist
+        </span>
+        </dd>
+        </div>
+        </div>
+        <div class="middle-uppernotification">
+        <div class="flex-container">
+        <dt  class="introTextIndividual"><span class="underlineBlack">Skill Investment</span></dt>
+        <dd class="introIndividual">Lorem ipsum dolor sit amet, ne sed inimicus ullamcorper. Ex sumo melius inciderint sed, at qui ullum recteque? Ex sed assum tritani quaerendum, invidunt accusata delicata sit te, pro enim prima ipsum at! Ad vim habemus recusabo voluptatum, ei quem molestie percipitur pri. Nam in veniam aeterno rationibus, lorem argumentum no quo, est eu commune expetenda rationibus.</dd>
+        <dd>Phase 1 : Kshs 450,567,789<br>
+          Phase 2 : Kshs 345,678,900<br>
+          Phase 3 : Kshs 230,456,890</dd>
+        <dd class="introIndividual"> Lorem ipsum dolor sit amet, nec saepe graecis delectus ne, id sint virtute contentiones sed. Hinc offendit moderatius at has, sed quidam tractatos ea, ei mel tale latine efficiantur! Has ea civibus omittam, eu his posse sadipscing. Solum legendos eleifend id vis? Has agam quidam et, lorem antiopam vel ea!
+        Persius labores conclusionemque at eos, ne laudem possit iudicabit mel? Eum erat abhorreant accommodare an, lorem etiam mel ne! Mel munere iracundia signiferumque eu, an nullam tritani oblique pri. Illud solet te vis, ei autem eligendi moderatius nec, est ut nonumes legendos?</dd>
+        <dd>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Learn more</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Add to watchlist</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Invest</span></button>
+          </span>
+        </dd>
+        <dd>
+          <span class="notificationElement">
+          <span class="linkClass">7,345,677</span> invest. made and
+          <span class="linkClass">3,900</span> added to watchlist
+        </span>
+        </dd>
+        </div>
+        </div>
+
+
+        <div class="middle-lowernotification">
+        <div class="flex-container">
+        <dt  class="introTextIndividual"><span class="underlineBlack">Time Investment</span></dt>
+        <dd class="introIndividual">Lorem ipsum dolor sit amet, ne sed inimicus ullamcorper. Ex sumo melius inciderint sed, at qui ullum recteque? Ex sed assum tritani quaerendum, invidunt accusata delicata sit te, pro enim prima ipsum at! Ad vim habemus recusabo voluptatum, ei quem molestie percipitur pri. Nam in veniam aeterno rationibus, lorem argumentum no quo, est eu commune expetenda rationibus.</dd>
+        <dd>Phase 1 : Kshs 450,567,789<br>
+          Phase 2 : Kshs 345,678,900<br>
+          Phase 3 : Kshs 230,456,890</dd>
+        <dd class="introIndividual"> Lorem ipsum dolor sit amet, nec saepe graecis delectus ne, id sint virtute contentiones sed. Hinc offendit moderatius at has, sed quidam tractatos ea, ei mel tale latine efficiantur! Has ea civibus omittam, eu his posse sadipscing. Solum legendos eleifend id vis? Has agam quidam et, lorem antiopam vel ea!
+        Persius labores conclusionemque at eos, ne laudem possit iudicabit mel? Eum erat abhorreant accommodare an, lorem etiam mel ne! Mel munere iracundia signiferumque eu, an nullam tritani oblique pri. Illud solet te vis, ei autem eligendi moderatius nec, est ut nonumes legendos?</dd>
+        <dd>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Learn more</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Add to watchlist</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Invest</span></button>
+          </span>
+        </dd>
+        <dd>
+          <span class="notificationElement">
+          <span class="linkClass">7,345,677</span> invest. made and
+          <span class="linkClass">3,900</span> added to watchlist
+        </span>
+        </dd>
+        </div>
+        </div>
+
+
+
+
+
+    <div class="lower-notification">
+      <div class="flex-container">
+        <dt  class="introTextIndividual"><span class="underlineBlack">Distribution partnerships</span></dt>
+        <dd class="introIndividual">Lorem ipsum dolor sit amet, ne sed inimicus ullamcorper. Ex sumo melius inciderint sed, at qui ullum recteque? Ex sed assum tritani quaerendum, invidunt accusata delicata sit te, pro enim prima ipsum at! Ad vim habemus recusabo voluptatum, ei quem molestie percipitur pri. Nam in veniam aeterno rationibus, lorem argumentum no quo, est eu commune expetenda rationibus.</dd>
+        <dd>Phase 1 : Kshs 450,567,789<br>
+          Phase 2 : Kshs 345,678,900<br>
+          Phase 3 : Kshs 230,456,890</dd>
+        <dd class="introIndividual"> Lorem ipsum dolor sit amet, nec saepe graecis delectus ne, id sint virtute contentiones sed. Hinc offendit moderatius at has, sed quidam tractatos ea, ei mel tale latine efficiantur! Has ea civibus omittam, eu his posse sadipscing. Solum legendos eleifend id vis? Has agam quidam et, lorem antiopam vel ea!
+        Persius labores conclusionemque at eos, ne laudem possit iudicabit mel? Eum erat abhorreant accommodare an, lorem etiam mel ne! Mel munere iracundia signiferumque eu, an nullam tritani oblique pri. Illud solet te vis, ei autem eligendi moderatius nec, est ut nonumes legendos?</dd>
+        <dd>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Apply</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Add Reminder</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Learn more</span></button>
+          </span>
+        </dd>
+        <dd>
+          <span class="notificationElement">
+          <span class="linkClass">7,345,677</span> invest. made and
+          <span class="linkClass">3,900</span> added to watchlist
+        </span>
+        </dd>
+      </div>
+      </div>
+    <div class="lower-notification">
+      <div class="flex-container">
+        <dt  class="introTextIndividual"><span class="underlineBlack">Legal partnerships</span></dt>
+        <dd class="introIndividual">Lorem ipsum dolor sit amet, ne sed inimicus ullamcorper. Ex sumo melius inciderint sed, at qui ullum recteque? Ex sed assum tritani quaerendum, invidunt accusata delicata sit te, pro enim prima ipsum at! Ad vim habemus recusabo voluptatum, ei quem molestie percipitur pri. Nam in veniam aeterno rationibus, lorem argumentum no quo, est eu commune expetenda rationibus.</dd>
+        <dd>Phase 1 : Kshs 450,567,789<br>
+          Phase 2 : Kshs 345,678,900<br>
+          Phase 3 : Kshs 230,456,890</dd>
+        <dd class="introIndividual"> Lorem ipsum dolor sit amet, nec saepe graecis delectus ne, id sint virtute contentiones sed. Hinc offendit moderatius at has, sed quidam tractatos ea, ei mel tale latine efficiantur! Has ea civibus omittam, eu his posse sadipscing. Solum legendos eleifend id vis? Has agam quidam et, lorem antiopam vel ea!
+        Persius labores conclusionemque at eos, ne laudem possit iudicabit mel? Eum erat abhorreant accommodare an, lorem etiam mel ne! Mel munere iracundia signiferumque eu, an nullam tritani oblique pri. Illud solet te vis, ei autem eligendi moderatius nec, est ut nonumes legendos?</dd>
+        <dd>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Apply</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Add Reminder</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Learn more</span></button>
+          </span>
+        </dd>
+        <dd>
+          <span class="notificationElement">
+          <span class="linkClass">7,345,677</span> invest. made and
+          <span class="linkClass">3,900</span> added to watchlist
+        </span>
+        </dd>
+              </div>
+            </div>
+
+      <div class="lower-notification">
+      <div class="flex-container">
+        <dt  class="introTextIndividual"><span class="underlineBlack">Education partnerships</span></dt>
+        <dd class="introIndividual">Lorem ipsum dolor sit amet, ne sed inimicus ullamcorper. Ex sumo melius inciderint sed, at qui ullum recteque? Ex sed assum tritani quaerendum, invidunt accusata delicata sit te, pro enim prima ipsum at! Ad vim habemus recusabo voluptatum, ei quem molestie percipitur pri. Nam in veniam aeterno rationibus, lorem argumentum no quo, est eu commune expetenda rationibus.</dd>
+        <dd>Phase 1 : Kshs 450,567,789<br>
+          Phase 2 : Kshs 345,678,900<br>
+          Phase 3 : Kshs 230,456,890</dd>
+        <dd class="introIndividual"> Lorem ipsum dolor sit amet, nec saepe graecis delectus ne, id sint virtute contentiones sed. Hinc offendit moderatius at has, sed quidam tractatos ea, ei mel tale latine efficiantur! Has ea civibus omittam, eu his posse sadipscing. Solum legendos eleifend id vis? Has agam quidam et, lorem antiopam vel ea!
+        Persius labores conclusionemque at eos, ne laudem possit iudicabit mel? Eum erat abhorreant accommodare an, lorem etiam mel ne! Mel munere iracundia signiferumque eu, an nullam tritani oblique pri. Illud solet te vis, ei autem eligendi moderatius nec, est ut nonumes legendos?</dd>
+        <dd>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Apply</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Add Reminder</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Learn more</span></button>
+          </span>
+        </dd>
+        <dd>
+          <span class="notificationElement">
+          <span class="linkClass">7,345,677</span> invest. made and
+          <span class="linkClass">3,900</span> added to watchlist
+        </span>
+        </dd>
+      </div>
+      </div>
+
+          <div class="lower-notification">
+      <div class="flex-container">
+        <dt  class="introTextIndividual"><span class="underlineBlack">Revenue supplement</span></dt>
+        <dd class="introIndividual">Lorem ipsum dolor sit amet, ne sed inimicus ullamcorper. Ex sumo melius inciderint sed, at qui ullum recteque? Ex sed assum tritani quaerendum, invidunt accusata delicata sit te, pro enim prima ipsum at! Ad vim habemus recusabo voluptatum, ei quem molestie percipitur pri. Nam in veniam aeterno rationibus, lorem argumentum no quo, est eu commune expetenda rationibus.</dd>
+        <dd>Phase 1 : Kshs 450,567,789<br>
+          Phase 2 : Kshs 345,678,900<br>
+          Phase 3 : Kshs 230,456,890</dd>
+        <dd class="introIndividual"> Lorem ipsum dolor sit amet, nec saepe graecis delectus ne, id sint virtute contentiones sed. Hinc offendit moderatius at has, sed quidam tractatos ea, ei mel tale latine efficiantur! Has ea civibus omittam, eu his posse sadipscing. Solum legendos eleifend id vis? Has agam quidam et, lorem antiopam vel ea!
+        Persius labores conclusionemque at eos, ne laudem possit iudicabit mel? Eum erat abhorreant accommodare an, lorem etiam mel ne! Mel munere iracundia signiferumque eu, an nullam tritani oblique pri. Illud solet te vis, ei autem eligendi moderatius nec, est ut nonumes legendos?</dd>
+        <dd>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Close deal</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Save</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Add to watchlist</span></button>
+          </span>
+        </dd>
+        <dd>
+          <span class="notificationElement">
+          <span class="linkClass">7,345,677</span> invest. made and
+          <span class="linkClass">3,900</span> added to watchlist
+          </span>
+        </dd>
+      </div>
+      </div>
+    <div class="lower-notification">
+      <div class="flex-container">
+        <dt  class="introTextIndividual"><span class="underlineBlack">Share Swap</span></dt>
+        <dd class="introIndividual">Lorem ipsum dolor sit amet, ne sed inimicus ullamcorper. Ex sumo melius inciderint sed, at qui ullum recteque? Ex sed assum tritani quaerendum, invidunt accusata delicata sit te, pro enim prima ipsum at! Ad vim habemus recusabo voluptatum, ei quem molestie percipitur pri. Nam in veniam aeterno rationibus, lorem argumentum no quo, est eu commune expetenda rationibus.</dd>
+        <dd>Phase 1 : Kshs 450,567,789<br>
+          Phase 2 : Kshs 345,678,900<br>
+          Phase 3 : Kshs 230,456,890</dd>
+        <dd class="introIndividual"> Lorem ipsum dolor sit amet, nec saepe graecis delectus ne, id sint virtute contentiones sed. Hinc offendit moderatius at has, sed quidam tractatos ea, ei mel tale latine efficiantur! Has ea civibus omittam, eu his posse sadipscing. Solum legendos eleifend id vis? Has agam quidam et, lorem antiopam vel ea!
+        Persius labores conclusionemque at eos, ne laudem possit iudicabit mel? Eum erat abhorreant accommodare an, lorem etiam mel ne! Mel munere iracundia signiferumque eu, an nullam tritani oblique pri. Illud solet te vis, ei autem eligendi moderatius nec, est ut nonumes legendos?</dd>
+        <dd>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Close deal</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Save</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Add to watchlist</span></button>
+          </span>
+        </dd>
+        <dd>
+          <span class="notificationElement">
+          <span class="linkClass">7,345,677</span> invest. made and
+          <span class="linkClass">3,900</span> added to watchlist
+        </span>
+        </dd>
+      </div>
+      </div>
+
+      <div class="lower-notification">
+      <div class="flex-container">
+        <dt  class="introTextIndividual"><span class="underlineBlack">Custodial services</span></dt>
+        <dd class="introIndividual">Lorem ipsum dolor sit amet, ne sed inimicus ullamcorper. Ex sumo melius inciderint sed, at qui ullum recteque? Ex sed assum tritani quaerendum, invidunt accusata delicata sit te, pro enim prima ipsum at! Ad vim habemus recusabo voluptatum, ei quem molestie percipitur pri. Nam in veniam aeterno rationibus, lorem argumentum no quo, est eu commune expetenda rationibus.</dd>
+        <dd>Phase 1 : Kshs 450,567,789<br>
+          Phase 2 : Kshs 345,678,900<br>
+          Phase 3 : Kshs 230,456,890</dd>
+        <dd class="introIndividual"> Lorem ipsum dolor sit amet, nec saepe graecis delectus ne, id sint virtute contentiones sed. Hinc offendit moderatius at has, sed quidam tractatos ea, ei mel tale latine efficiantur! Has ea civibus omittam, eu his posse sadipscing. Solum legendos eleifend id vis? Has agam quidam et, lorem antiopam vel ea!
+        Persius labores conclusionemque at eos, ne laudem possit iudicabit mel? Eum erat abhorreant accommodare an, lorem etiam mel ne! Mel munere iracundia signiferumque eu, an nullam tritani oblique pri. Illud solet te vis, ei autem eligendi moderatius nec, est ut nonumes legendos?</dd>
+        <dd>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Close deal</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Save</span></button>
+          </span>
+          <span style="padding: 5px">
+          <button mat-stroked-button class="menuBttn"><span class="linkClass">Add to watchlist</span></button>
+          </span>
+        </dd>
+        <dd>
+          <span class="notificationElement">
+          <span class="linkClass">7,345,677</span> invest. made and
+          <span class="linkClass">3,900</span> added to watchlist
+        </span>
+        </dd>
+      </div>
+      </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+
+<section class="individualfooterGrid">
+
+    <div class="footerBottomIndividual">
+    <div class="bottomServiceRow positionSticky">
+    <div class="footerbottom">
+    <div class="secondfooterflex">
+      <h3 class="testClass"><span class="footerLinks">+</span>
+        <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none" class="footerLinks">About Company</a>
+      </h3>
+      <h3 class="testClass"><span class="footerLinks">+</span>
+        <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none" class="footerLinks">Investment requested</a>
+      </h3>
+    </div>
+    </div>
+
+    <div class="pledgeBottom">
+    <div class="secondfooterflex">
+      <h3 class="testClass">
+        <span class="footerLinks">+</span>
+        <a [routerLink]="['/PledgeComponent']" style="text-decoration: none" class="footerLinks">Deals published</a>
+      </h3>
+      <h3 class="testClass">
+        <span class="footerLinks">+</span><a [routerLink]="['/StatisticsComponent']" style="text-decoration: none" class="footerLinks">Partners requested</a>
+      </h3>
+    </div>
+    </div>
+
+    <div class="dealsBottom footerLogo">
+    <div class="imgd">
+    </div>
+    </div>
+
+    <div class="dealsBottom">
+    <div class="secondfooterflex">
+      <h3 class="testClass">
+      <span class="footerLinks">+</span><a [routerLink]="['/BusinessDealsComponent']" style="text-decoration: none"
+      class="footerLinks">Investment stats</a>
+      </h3>
+      <h3 class="testClass"><span class="footerLinks">+</span>
+        <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none" class="footerLinks">Deals closed
+      </a>
+    </h3>
+    </div>
+    </div>
+    <div class="footerbottom">
+    <div class="secondfooterflex">
+      <h3 class="testClass"><span class="footerLinks">+</span>
+        <a [routerLink]="['/JobsComponent']" style="text-decoration: none">Company docs</a></h3>
+      <h3 class="testClass"><span class="footerLinks">+</span>
+        <a [routerLink]="['/StatisticsComponent']" style="text-decoration: none" class="footerLinks">Jobs applied</a></h3>
+    </div>
+    </div>
+    </div>
+    </div>
+
+</section>
+
+</body>

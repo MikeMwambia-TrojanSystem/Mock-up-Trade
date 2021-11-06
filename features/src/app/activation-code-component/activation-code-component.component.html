@@ -1,0 +1,41 @@
+<body>
+<div class="content">
+<section>
+<header>
+ <div>Account activation<hr class="line"></div>
+</header>
+</section>
+<section>
+	<img src="assets/letter.svg" style="height:150px;width: 250px">
+</section>
+<br>
+<section>
+	<form [formGroup]="activationForm" (ngSubmit)="onActivate()">
+	<table class="tableClass">
+
+	<tr>
+	<td colspan="2">
+	<mat-form-field appearance="outline" class="demo-full-width">
+	<mat-label>Enter account activation code</mat-label>
+	<input matInput placeholder="Enter activation code" formControlName="code">
+	<mat-icon matSuffix>create</mat-icon>
+	</mat-form-field>
+	</td>
+	</tr>
+	
+
+	<tr>
+	<td class="content-center" colspan="2">
+	<p style="margin-left: 35%;margin-right: 35%">
+	<button mat-raised-button color="basic" type="submit" [disabled]="!activationForm.valid">Activate
+	</button>
+	</p>
+	</td>
+	</tr>
+	</table>
+	</form>
+
+</section>
+</div>
+</body>
+
